@@ -1,0 +1,330 @@
+<!DOCUMENT html>
+<html>
+	<head>
+		<title>Flip Stitch Pillows - Our Products</title>
+
+		<!--Stylesheets-->
+		<link rel="stylesheet" href="css/site.css" type="text/css">
+		<link rel="stylesheet" href="css/products.css" type="text/css">
+		
+		<!--Fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Josefin+Sans:700,600,500,300,100" rel="stylesheet">
+
+		<!--If using jQuery or Javascript-->	
+		<script src='js/myscript.js'></script>
+
+	</head>
+
+	<body>
+
+	<!-- This is the navigational section-->
+
+		<div class="navbar">
+			<div class="row nav-elements">
+
+				<!--Navbar - Logo-->
+				<a id="home" href="index.html" >
+					<img id="logo" src="images/logo.png" >
+				</a>
+
+				<!-- Navbar- Go to Products Page-->
+				<a class="nav-item" href="products.html" id="products">Our Products</a>
+				
+				<!-- Navbar- Go to Our Story Page-->
+				<a class="nav-item" href="story.html" id="story">Our Story</a>
+
+				
+				<!-- Navbar- Go to pages associated with shopper-->
+				<span class="account">
+					<a href="bag.html">bag</a>
+					<a>your account</a>
+				</span>
+			</div>
+		</div>
+
+
+	<!-- This is the main part of the page-->
+
+	<!-- For the purposes of simplification, this page was "prefiltered" to show the states of the filters and to limit the number of illustratrions/images for this project-->
+
+		<main>
+
+			<div class="row">
+				<h2 class="page-title">our products</h2>
+			</div>
+
+			<div class="row">
+
+				<!-- Group of filters that help the user select the right size and shape of filter -->
+
+				<div class="col-3">
+
+
+					<!-- Filter Group 1 by Category: Size -->
+
+					<div class="filter-spacing">
+						<label class="filter-label-name">Size</label>
+						<a class="p1" onclick="showSizeFilter(this)" id="size-filter-link">Select</a>
+					</div>
+
+
+					<div class="collapsible-filter" id="size-filters">
+
+
+						<!-- Filter by Size label #1 - Size - Couch -->
+
+						<div class="filter-item">
+
+							<input type="checkbox" class="custom-checkbox" checked="checked">
+							
+							<label class="filter-label">Couch</label>
+
+						</div>
+
+						<!-- Filter by Size label #2 - Size - Pouf -->
+
+						<div class="filter-item">
+
+							<input type="checkbox" class="custom-checkbox" checked="checked">
+							
+							<label class="filter-label">Pouf</label>
+							
+						</div>
+
+						<!-- Filter by Size label #3 - Size - Body -->
+
+						<div class="filter-item">
+
+							<input type="checkbox" class="custom-checkbox" checked="checked">
+							
+							<label class="filter-label">Body</label>
+							
+						</div>
+
+						<!-- Filter by Size label #4 - Size - Round -->
+
+						<div class="filter-item">
+
+							<input type="checkbox" class="custom-checkbox" checked="checked">
+							
+							<label class="filter-label">Round</label>
+							
+						</div>
+
+					</div>
+
+
+
+					<!--Filter Group 2 by Category: Shape-->
+
+
+					<div class="filter-spacing  bottom-filter">
+						<label class="filter-label-name">Shape</label>
+						<a class="p1" onclick="showShapeFilter(this)" id="shape-filter-link">Select</a>
+					</div>
+
+
+					<div class="collapsible-filter" id="shape-filters">
+
+
+
+						<!-- Filter by Shape label #1 - Shape - Bear -->
+
+						<div class="filter-item">
+
+							<input type="checkbox"  class="custom-checkbox" checked="checked">
+							
+							<label class="filter-label">Bear</label>
+							
+						</div>
+
+
+						<!-- Filter by Shpae label #2 - Shape - Cat -->
+
+						<div class="filter-item">
+
+							<input type="checkbox"  class="custom-checkbox">
+							
+							<label class="filter-label">Cat</label>
+							
+						</div>
+
+
+						<!-- Filter by Shape label #3 - Shape - Dog -->
+
+						<div class="filter-item">
+
+							<input type="checkbox"  class="custom-checkbox">
+							
+							<label class="filter-label">Dog</label>
+							
+						</div>
+
+
+						<!-- Filter by Shape label #4- Shape - Bunny -->
+
+						<div class="filter-item">
+
+							<input type="checkbox" class="custom-checkbox">
+							
+							<label class="filter-label">Rabbit</label>
+							
+						</div>
+
+
+
+
+						<!-- Filter by Shape label #5 - Shape - Round -->
+
+						<div class="filter-item">
+
+							<input type="checkbox"  class="custom-checkbox">
+							
+							<label class="filter-label">Round</label>
+							
+						</div>
+
+						<!-- Filter by Shape label #6 - Sahpe - Square -->
+
+						<div class="filter-item">
+
+							<input type="checkbox"  class="custom-checkbox">
+							
+							<label class="filter-label">Square</label>
+
+						</div>
+
+					</div>
+
+
+				</div>
+
+
+
+				<!-- Section with library of products -->
+
+
+				<div class="col-9">
+
+					<section class="form-group">
+						
+						<div>
+
+							<!--Dropdown with sorting options-->
+							<label class="filter-label-name">Sort by</label>
+
+							<select class="styled-select">
+								<option class="selectable-option">Size</option>
+								<option class="selectable-option">Shape</option>
+								<option class="selectable-option" selected="true">Price - Low to High</option>
+								<option class="selectable-option">Price - High to Low</option>
+							</select>
+
+							<!--Search box-->
+							<input type="text" name="search" class="text-input" placeholder="search"></input>
+						
+						</div>
+					</section>
+
+
+					<!-- This is the section with the grid of products -->
+
+					<section class="shopping-section">
+						
+						<!-- ITEM 1 in Grid -->
+						<article class="product-tile">
+							<a href="detail.html">
+								<div>
+									<img src="images/preview-couch-bear.png">
+								</div>
+								<div class="product-tile-content">
+									<p class="product-tile-label">Couch Bear</p>
+									<p class="product-tile-price">$335</p>
+								</div>
+							</a>
+						</article>
+
+
+						<!-- ITEM 2 in Grid -->
+						<article class="product-tile">
+							<a href="detail-pouf-bear.html">
+								<div>
+									<img src="images/preview-pouf-bear.png">
+								</div>
+								<div class="product-tile-content">
+									<p class="product-tile-label">Pouf Bear</p>
+									<p class="product-tile-price">$535</p>
+								</div>
+							</a>
+						</article>
+
+						<!-- ITEM 3 in Grid -->
+						<article class="product-tile">
+							<a href="detail-body-bear.html">
+								<div>
+									<img src="images/preview-body-bear.png">
+								</div>
+								<div class="product-tile-content">
+									<p class="product-tile-label">Body Bear</p>
+									<p class="product-tile-price">$735</p>
+								</div>
+							</a>
+						</article>
+
+
+						<!-- ITEM 4 in Grid -->
+						<article class="product-tile">
+							<a href="detail.html">
+								<div>
+									<img src="images/preview-round-bear.png">
+								</div>
+								<div class="product-tile-content">
+									<p class="product-tile-label">Round Bear</p>
+									<p class="product-tile-price">$1035</p>
+								</div>
+							</a>
+						</article>
+
+					</section>
+
+				</div>			
+
+			</div>
+
+		</main>
+	<!-- End of Main -->
+
+
+		
+	<!-- This is the footer -->
+		<div class="footer">
+			
+			
+			<!-- Footer grouped by topic: Shopping -->
+			<div class="col-2">
+
+				<h6>Shopping</h6>
+				<ul>
+					<li><a href="products.html">Our Products</a></li>
+					<li><a>Your Bag</a></li>
+					<li><a>Your Account</a></li>
+				</ul>
+			</div>
+
+			<!-- Footer grouped by topic: Company info -->
+			<div class="col-2">
+				<h6>Our COmpany</h6>
+				<ul>
+					<li><a href="story.html">Our Story</a></li>
+					<li><a>Contact</a></li>
+					<li><a>Blog</a></li>
+				</ul>
+			</div>
+
+		</div>
+
+	<!--End of HTML for footer-->
+
+	</body>
+	
+</html>

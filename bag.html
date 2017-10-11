@@ -1,0 +1,198 @@
+<!DOCUMENT html>
+<html>
+	<head>
+		<title>Flip Stitch Pillows - Our Products</title>
+
+
+		<!--Stylesheets-->
+		<link rel="stylesheet" href="css/site.css" type="text/css">
+		<link rel="stylesheet" href="css/detail.css" type="text/css">
+		<link rel="stylesheet" href="css/bag.css" type="text/css">
+
+		<!--Fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Josefin+Sans:700,600,500,300,100" rel="stylesheet">
+
+		<!--If using jQuery or Javascript-->	
+		<script src='js/myscript.js'></script>
+
+	</head>
+
+	<body>
+
+	<!-- This is the navigational section-->
+
+		<div class="navbar">
+			<div class="row nav-elements">
+
+				<!--Navbar - Logo-->
+				<a id="home" href="index.html" >
+					<img id="logo" src="images/logo.png" >
+				</a>
+
+				<!-- Navbar- Go to Products Page-->
+				<a class="nav-item" href="products.html" id="products">Our Products</a>
+				
+				<!-- Navbar- Go to Our Story Page-->
+				<a class="nav-item" href="story.html" id="story">Our Story</a>
+
+				
+				<!-- Navbar- Go to pages associated with shopper-->
+				<span class="account">
+					<a href="bag.html" id="bag">bag</a>
+					<a>your account</a>
+				</span>
+			</div>
+		</div>
+
+
+	<!-- This is the main part of the page-->
+		<main>
+
+
+			<!-- Page Header-->
+
+			<div class="col-8">
+				<h2 class="page-title">shopping bag</h2>
+			
+			
+			<!-- Product Detail Section-->
+
+					<!-- Count of items -->
+
+					<div id="total-item-div">
+
+						<label class="total-label-style" id="total-items">Items (0)</label>
+
+					</div>
+
+
+					<!-- Product Details Section - Additional Details-->
+					<div class="order-item-row">
+
+						<!-- Product Details Section - Customizaton-->		
+
+
+						<div class="order-group">
+							<!-- Product Details Section - Select Customization-->
+							<div class="col-2 shopping-cart-img-container">
+								<img class="shopping-cart-img" src="images/preview-couch-bear.png">
+							</div>
+
+							<div class="col-10">
+							
+								<label class="col-6 order-row-font-style item-name">Item Name</label>
+
+								<div class="col-6 price-group">
+									
+									<label class="order-row-font-style">$335</label>
+									
+									<label class="order-row-font-style multiplier">x</label>
+									
+									<input class="styled-select" value="1"></input>
+									
+									<label class="order-row-font-style">$335</label>
+								
+								</div>
+						
+								<div class="col-12 item-span-styling">
+									<a class="p1">Customize Pillow</a>
+								
+									<div class="order-group" id="custom-request-section">
+										<p class="p1">How do you want to customize your pillow?</p>
+										<textarea class="custom-input" type="text" name="customize" class="text-input" placeholder="Enter request here."></textarea>
+									</div>
+								</div>
+
+								<div class="col-12 item-span-styling">
+									
+									<button class="tertiary-button">edit</button>
+
+									
+									<button class="tertiary-button">remove</button>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+			</div>
+						
+
+				<!-- Shopping Bag - Subtotal & Total-->
+				<div class="col-4" id="shopping-cart-total">
+
+
+					<!-- Product Details Section - Order Widgets-->
+					<div class="total-section" >
+
+						<!-- Product Details Section - Enter Quantity-->
+						<div id="total-span">
+							<label class="total-label-style major-number " id="subtotal-label">Subtotal</label>
+							<label class="total-label-value  major-number" id="subtotal-value">Subtotal Value</label>
+						</div>
+
+						<div id="total-span">
+							<label class="total-label-style minor-number" id="shipping-label">Shipping</label>
+							<label class="total-label-value minor-number" id="shipping-value">Shipping Value</label>
+						</div>
+
+						<div id="total-span">
+							<label class="total-label-style minor-number" id="tax-label">Tax</label>
+							<label class="total-label-value minor-number" id="tax-value">Tax value</label>
+						</div>
+
+						<hr>
+
+						<div id="total-span">
+							<label class="total-label-style" id="total-label">Total</label>
+							<label class="total-label-value major-number" id="total-value">Total</label>
+						</div>
+						<button id="checkout-button">checkout now</button>					
+
+					</div>
+
+					<!-- Product Details Section - Button to complete-->
+
+
+
+				</div>
+							
+		</main>
+
+	<!--END OF MAIN -->
+
+
+		
+	<!-- This is the footer -->
+		<div class="footer">
+
+			<!-- Footer grouped by topic: Shopping-->
+			<div class="col-2">
+				<h6>Shopping</h6>
+				<ul>
+					<li><a href="products.html">Our Products</a></li>
+					<li><a>Your Bag</a></li>
+					<li><a>Your Account</a></li>
+				</ul>
+			</div>
+
+
+			<!-- Footer grouped by topic: Company info -->
+			<div class="col-2">
+				<h6>Our COmpany</h6>
+				<ul>
+					<li><a href="story.html">Our Story</a></li>
+					<li><a>Contact</a></li>
+					<li><a>Blog</a></li>
+				</ul>
+			</div>
+
+		</div>
+	<!--End of HTML for footer-->
+
+	</body>
+	
+</html>

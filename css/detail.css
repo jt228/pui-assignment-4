@@ -1,0 +1,97 @@
+
+/* Navigation Modifications */
+/* Selected Nav element */
+#home:hover {
+	border-bottom: 2px #5a6c7b solid;
+    padding-bottom: 13px;
+}
+
+/* Images and spacing for Product details*/
+.product-price{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.product-detail{
+	width: 96%;
+	padding-right: 30px;
+}
+
+.product-detail img{
+	display: inline-block;
+	max-width: 100%;
+}
+
+
+/* Order form */
+/* Class for all order elements */
+.order-section{
+	padding-bottom: 20px;
+}
+
+/* Class for spacing order elements*/
+.order-group{
+	padding-bottom: 20px;
+	padding-bottom: 20px;
+	margin-top: 20px;
+	width:100%;
+}
+
+/* Class for selection width */
+.styled-select{
+	width: 164px;
+	float:right;
+}
+
+/* Classes styling inputs */
+.styled-input, .custom-input{
+	border-color: #dfe0e0;
+	height: 40px;
+	width: 164px;
+	float: right;
+	display: block;
+	text-transform: capitalize;
+	font-family: "Josefin Sans";
+	border-radius: 1px;
+    font-weight: 300;
+    font-size: 1.125em;
+    padding-left: 20px;
+}
+
+.custom-input{
+	width: 100%;
+	font-size: 0.900em;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	min-height: 100px;
+
+}
+
+/* Class to style Product Description group */
+.product-specifications-group{
+	margin-bottom: 0px;
+}
+
+/* Class to Style unordered list */
+.product-specifications-list{
+	margin: 0px;
+	list-style-type: circle; 
+	padding-left: 15px;
+
+}
+
+/* Class to Style unordered list items */
+.product-specifications-list li{
+	padding-left: 15px;
+	list-style-type: circle; 
+	-webkit-padding-start: 0px;
+}
+
+
+/* Important IDs */
+
+#custom-request-section{
+	display: none;
+}

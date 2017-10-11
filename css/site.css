@@ -1,0 +1,528 @@
+
+
+/*Layout elements*/
+
+
+/* Navigation */
+
+/* "navbar" defines the size, placement, color and behavior of the navigation bar */
+.navbar {
+	top: 0;
+	overflow: hidden;
+	width: 94%;
+	position: fixed;
+	background: white;
+	height: 40px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 3%;
+	padding-right:3%;
+
+}
+
+/* The footer will also be global*/
+.footer{
+	display: block;
+	padding-top: 0px;
+	margin-top: 40px;
+	overflow: hidden;
+	z-index: 10;
+	width: 94%;
+	height: 145px;
+	padding-left: 3%;
+	padding-right:3%;
+	background: #c5d3dd;
+}
+
+/* The footer will match style of other headlines but will be modified for spacing*/
+.footer h6{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.000em;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 4px;
+}
+
+/* An unordered list for navigation elments might be helpful later*/
+.footer ul,li{
+	list-style: none;
+	-webkit-padding-start: 0px;
+	margin: 0px;
+}
+
+/* Defines the spacing in the footer*/
+.footer .col-2{
+	border: 0px none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.footer a {
+	color:black;
+	font-family: 'Josefin Sans', sans-serif;
+	text-decoration: none;
+}
+
+/* "nav-element" contains all navigational elements */
+.nav-element {
+
+}
+
+
+/* Style of links in navbar */
+.navbar a {
+	color: black;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.500em;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-decoration: none;
+	float: left;
+
+}
+
+
+/* Style of links in navbar - Control positioning of text in Navbar */
+.nav-item {
+	padding-left: 35px;
+	padding-right: 35px;
+	padding-top: 24px;
+}
+
+/* Style of links in navbar  -  Style to indicate Hover on Navbar*/
+.nav-item:hover {
+	border-bottom: 2px #5a6c7b solid;
+    padding-bottom: 20px;
+    text-decoration: none;
+}
+
+
+/* Style of links in navbar  -  Style to indicate Active on Navbar*/
+nav-item:active {
+	border-bottom: 2px #c5d3dd solid;
+    padding-bottom: 20px;
+    text-decoration: none;
+}
+
+
+/* Style of links in navbar  -  Style to add spacing to Home element*/
+#home {
+	padding-right: 35px;
+}
+
+/* Style of links in navbar  -  Account info - for Log In and Bags*/
+.account a {
+	color: black;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.500em;
+	font-weight: 300;
+	text-transform: lowercase;
+	text-decoration: none;
+	float: right;
+	display: block;
+	padding-top: 24px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.account a:hover {
+	border-bottom: 2px #5a6c7b solid;
+    padding-bottom: 20px;
+    text-decoration: none;
+}
+
+
+/* Breadcrumb navigation elelments */
+
+.breadcrumb{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.000em;
+	font-weight: 700;
+	text-transform: uppercase;
+	width: 94%;
+	padding-left: 3%;
+	padding-right: 3%;
+	height: 50px;
+	margin-top: 100px;
+	background: #c5d3dd;
+	display: flex;
+  	align-items: center;
+  	position: fixed;
+}
+
+.breadcrumb a{
+	text-decoration: none;
+}
+
+.page-indicator{
+	padding-left: 5px;
+	padding-right: 5px;
+	display: inline-block;
+}
+
+
+
+
+/* Containers & Grids */
+
+/* modify the "body" element to have 0 padding */
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+/* "main" is the container for all page elements besides the header and footer. */
+main {
+	width: 80%;
+	margin-right: 10%;
+	margin-left: 10%;
+	padding-bottom: 600px;
+	padding-top: 140px;
+}
+
+
+/* Grid */
+
+.row {
+	
+	width: 100%;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 0px;
+    margin: 0px;
+}
+
+.col-1 {
+	width: 6.33%;
+	}
+
+.col-2 {
+	width: 14.66%;
+	}
+
+.col-3 {
+	width: 23%;
+	}
+
+.col-4 {
+	width: 31.33%;
+	}
+
+.col-5 {
+	width: 39.66%;
+	}
+
+.col-6 {
+	width: 48%;
+	}
+
+.col-7 {
+	width: 56.33%;
+	}
+
+.col-8 {
+	width: 64.66%;
+	}
+
+.col-9 {
+	width: 73%;
+	}
+
+.col-10 {
+	width: 82.33%;
+	}
+
+.col-11 {
+	width: 89.66%;
+	}
+
+.col-12 {
+	width: 98%;
+	}
+
+/* Buttons */
+
+button {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.500em;
+	font-weight: 100;
+	text-transform: uppercase;
+	color:white;
+	background: #5a6c7b;
+	height: 60px;
+	width: 100%;
+	position: middle;
+	border:none;
+	padding-top: 10px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	max-width: 350px;
+}
+
+button:hover{
+	box-shadow: 4px 4px 1px #b3b4b4;
+	border: 1px solid #b3b4b4;
+
+}
+
+
+button.tertiary-button{
+	height: 30px;
+	width: 100px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.125em;
+	text-transform: lowercase;
+	font-weight: 100;
+	background: white;
+	color:black;
+	padding: 4px;
+	margin-right: 5px;
+	margin-bottom: 0px;
+	margin-top: 17px;
+	border: 1px #dfe0e0 solid;
+}
+
+
+button.tertiary-button:hover{
+	box-shadow: 1px 1px 1px #b3b4b4;
+	border: 1px solid #b3b4b4;
+
+}
+
+
+/* Typography s*/
+
+
+h1 {
+	font-family: 'Averia Serif Libre', cursive;
+	font-size: 4.375em;
+	color: #5a6c7b;
+}
+
+h2 {
+	font-family: 'Averia Serif Libre', cursive;
+	font-size: 2.500em;
+	color: #5a6c7b;
+}
+
+h2.page-title{
+	border-bottom: 2px #c5d3dd solid;
+    padding-bottom: 10px;
+    text-transform: lowercase;
+}
+
+h3 {
+	font-family: 'Averia Serif Libre', cursive;
+	font-size: 2.500em;
+}
+
+
+h4 {	
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.250em;
+	text-transform: uppercase;
+	font-weight: 600;
+	}
+
+h5 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 0.900em;
+	font-weight: 700;
+}
+
+
+p{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.500em;
+	font-weight: 100;
+}
+
+
+.p1{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 0.900em;
+	font-weight: 500;
+}
+
+a {
+	color: #2b7991;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.p-link{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size:  1.125em;	
+	font-weight: 700;
+	text-decoration: none;
+	margin-bottom: 20px;
+}
+
+
+
+/* Form fields */
+
+/* Form group */
+
+.form-group {
+	padding-bottom: 40px;
+	width: 100%;
+}
+
+/* Filters */
+.filter-spacing{
+	margin-top: 10px;
+	margin-bottom: 18px;
+}
+
+.filter-item{
+	margin-bottom: 4px;
+}
+
+.collapsible-filter{
+	display: none;
+}
+
+label.filter-label-name{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.125em;
+	font-weight: 600;
+	text-transform: capitalize;
+	margin-right: 20px;
+}
+
+input.custom-checkbox{	
+	-webkit-appearance: none;
+	border: 1px solid black;
+	padding: 9px;
+	border-radius: 1px;
+	display: inline-block;
+}
+
+input.custom-checkbox:checked{
+	background: black;
+}
+
+label.filter-label{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.125em;
+	font-weight: 500;
+	margin-bottom: 14px;
+	margin-left: 10px;
+	display: inline-block;
+	vertical-align: middle;
+	text-transform: capitalize;
+}
+
+.filter-spacing a{
+	float: right;
+	margin-right: 60px;
+}
+
+.bottom-filter {
+	padding-top: 10px;
+}
+/* Dropdown */
+
+
+.styled-select{
+	background: url("../images/down-arrow.svg") no-repeat 96% 5px;
+	height: 40px;
+	overflow: hidden;
+	width: 240px;
+	border-color: #dfe0e0;
+	-webkit-appearance: none;
+  	-webkit-border-radius: 0px;
+  	font-family: "Josefin Sans";
+	font-size: 1.125em;
+	font-weight: 300;
+	padding-left: 20px;
+}
+
+option.selectable-option{
+	margin-left: 10px;
+	text-transform: capitalize;
+}
+
+
+/*Search Box */
+
+input.text-input{
+	border-color: #dfe0e0;
+	height: 40px;
+	width: 240px;
+	float: right;
+	display: block;
+	text-transform: capitalize;
+	font-family: "Josefin Sans";
+	border-radius: 1px;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1.125em;
+    padding-left: 20px;
+}
+
+
+/* Shopping Tiles */
+
+section .shopping-section{
+	width: 100%;
+	padding: 40px;
+}
+
+
+.product-tile{
+	width: 27%; /* 256px */
+	height: 349px;
+	padding: 20px;
+	margin-bottom: 40px;
+	background: white;
+	display:  inline-flex;
+}
+
+.product-tile:hover{
+	box-shadow: 4px 4px 1px #b3b4b4;
+	border: 1px solid #b3b4b4;
+}
+
+.product-tile img{
+	width: 100%;
+    height: auto;
+    display: inline-block;
+    clip: rect(0px,256px,256px,0px);
+}
+
+.product-tile-content {
+	display: block;
+}
+
+p.product-tile-label{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.125em;
+	font-weight: 700;
+	color: black;
+	text-decoration: none;
+}
+
+.product-tile-price{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.125em;
+	font-weight: 500;
+	color: black;
+	text-decoration: none;
+}
+
+.product-tile a{
+	text-decoration: none;
+}
+
+/* Sections for details on the right hand size of page */
+
+.left-panel {
+	padding-bottom: 40px;
+}
