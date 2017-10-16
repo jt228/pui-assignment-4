@@ -13,6 +13,7 @@
 
 		<!--If using jQuery or Javascript-->	
 		<script src='js/myscript.js'></script>
+		<script src="js/bag.js"></script>
 
 	</head>
 
@@ -63,104 +64,138 @@
 
 			
 			<!-- Product Detail Section-->
+			<div class="row">
+
 				<div class="col-8 left-panel">
 
-					<!-- Product Detail Image-->
+						<!-- Product Detail Image-->
 					<div class="product-detail">
 						<img src="images/couch-bear.png">
 					</div>
 
 					<!-- Product Details Section - Additional Details-->
+
+
 					<div class="col-8" id="details">
 
 						<div id="product-description">
 							<h5>Product Description</h5>
 							<p class="p1"> 
-								Every detail of the Couch Bear was hand-selected and reflects <b>Flip/Stich's</b> passion for perfection. This pillow fits snugly in the arms of adults, just like your childhood teddy bear. The Couch Bear is the ideal after-work companion to share a glass of rosé or to cover your eyes while watching <i>Get Out</i>. Crafted with locally sourced materials, including our founders' favorites - recycled Heinz Ketchup bottles and abandoned Pirates jerseys.
+									Every detail of the Couch Bear was hand-selected and reflects <b>Flip/Stich's</b> passion for perfection. This pillow fits snugly in the arms of adults, just like your childhood teddy bear. The Couch Bear is the ideal after-work companion to share a glass of rosé or to cover your eyes while watching <i>Get Out</i>. Crafted with locally sourced materials, including our founders' favorites - recycled Heinz Ketchup bottles and abandoned Pirates jerseys.
 							</p>
+							</div>
+
+							<!-- Product Details Section - Materials-->
+							<div >
+								<h5 class="product-specifications-group">Materials</h5>
+								<ul class="product-specifications-list"> 
+									<li class="p1">Genuine polyester fur.</li>
+									<li class="p1">Cotton-thread embroidery</li>
+									<li class="p1">Cotton/poly fill.</li>
+									<li class="p1">Handmade in Pittsburgh.</li>
+								</ul>
+							</div>
+
+							<!-- Product Details Section - Dimensions-->
+							<div >
+								<h5 class="product-specifications-group">Dimensions</h5>
+								<ul class="product-specifications-list"> 
+									<li class="p1">Approximately 36" x 28" x 8".</li>
+									<li class="p1">2 pounds.</li>
+								</ul>
+							</div>
 						</div>
 
-						<!-- Product Details Section - Materials-->
-						<div >
-							<h5 class="product-specifications-group">Materials</h5>
-							<ul class="product-specifications-list"> 
-								<li class="p1">Genuine polyester fur.</li>
-								<li class="p1">Cotton-thread embroidery</li>
-								<li class="p1">Cotton/poly fill.</li>
-								<li class="p1">Handmade in Pittsburgh.</li>
-							</ul>
-						</div>
-
-						<!-- Product Details Section - Dimensions-->
-						<div >
-							<h5 class="product-specifications-group">Dimensions</h5>
-							<ul class="product-specifications-list"> 
-								<li class="p1">Approximately 36" x 28" x 8".</li>
-								<li class="p1">2 pounds.</li>
-							</ul>
-						</div>
 					</div>
+							
 
-				</div>
-						
+					<!-- Product Details Section - Order Form-->
+					<div class="col-4">
 
-				<!-- Product Details Section - Order Form-->
-				<div class="col-4">
+						<!-- Product Details Section - Title, price, description-->
+						<h4 class="product-price">$335</h4>
+						<p class="p1">Item No: CB123</p>
 
-					<!-- Product Details Section - Title, price, description-->
-					<h4 class="product-price">$335</h4>
-					<p class="p1">Item No: CB123</p>
-
-					<p>Curl up with this charismatic emblem of childhood which adds sophistication and warmth to any room. Scaled  to enhance the comfort of the modern couch.</p>
+						<p>Curl up with this charismatic emblem of childhood which adds sophistication and warmth to any room. Scaled  to enhance the comfort of the modern couch.</p>
 
 
-					<!-- Product Details Section - Link to Additional Details-->
-					<a class="p-link" href="#details" id="details">Product Details</a>
+						<!-- Product Details Section - Link to Additional Details-->
+						<a class="p-link" href="#details" id="details">Product Details</a>
 
 
-					<!-- Product Details Section - Order Widgets-->
-					<div class="order-section">
-
-
-						<!-- Product Details Section - Enter Quantity-->
-						<div class="order-group">
-
-
-							<label class="filter-label-name">Quantity</label>
-
-							<input class="styled-input" value="1"></input>
-
-						</div>
+						<!-- Product Details Section - Order Widgets-->
+						<div class="order-section">
 
 						<!-- Product Details Section - Customizaton-->
-						<div class="order-group">
+							<div class="order-group" id="animal-selected">
 
-							<!-- Product Details Section - Select Customization-->
-							<label class="filter-label-name">Customize Pillow</label>
+								<!-- Product Details Section - Select Customization-->
+								<label class="filter-label-name">Shape</label>
 
-							<select class="styled-select" onchange="customizePillow(this)">
+								<select class="styled-select" id="shape-selector" onchange="selectPillowShape()">
 
-								<option class="selectable-option" value="0">No</option>
-								<option class="selectable-option" value="1">Yes</option>
+									<option class="selectable-option" value="0">Bear</option>
+									<option class="selectable-option" value="1">Cat</option>
+									<option class="selectable-option" value="2">Dog</option>
+									<option class="selectable-option" value="3">Rabbit</option>
+									<option class="selectable-option" value="4">Round</option>
+									<option class="selectable-option" value="5">Square</option>
 
-							</select>
+								</select>
+							</div>
+
+							<!-- Product Details Section - Enter Quantity-->
+							<div class="order-group">
+
+
+								<label class="filter-label-name">Quantity</label>
+
+								<input class="styled-input" value="1" id="quantity-requested"></input>
+
+							</div>
+
+							<!-- Product Details Section - Customizaton-->
+							<div class="order-group">
+
+								<!-- Product Details Section - Select Customization-->
+								<label class="filter-label-name">Customize Pillow</label>
+
+								<select class="styled-select" onchange="customizePillow(this)">
+
+									<option class="selectable-option" value="0">No</option>
+									<option class="selectable-option" value="1">Yes</option>
+
+								</select>
+							</div>
+
+
+
+							<!-- Product Details Section - Customization Option box that expands when answer is "Yes"-->
+							<div class="order-group" id="custom-request-section">
+								<p class="p1">How do you want to customize your pillow?</p>
+								<textarea class="custom-input" type="text" name="customize" class="text-input" placeholder="Enter request here." id="custom-request"></textarea>
+							</div>
 						</div>
-
-
-
-						<!-- Product Details Section - Customization Option box that expands when answer is "Yes"-->
-						<div class="order-group" id="custom-request-section">
-							<p class="p1">How do you want to customize your pillow?</p>
-							<textarea class="custom-input" type="text" name="customize" class="text-input" placeholder="Enter request here."></textarea>
-						</div>
-
-					</div>
 
 					<!-- Product Details Section - Button to complete-->
-					<button>Add to Bag</button>
+					<button onclick="addItemToBag()">Add to Bag</button>
 
 
 				</div>
+
+			</div>
+
+				<!-- Related products -->
+			<div class="col-12">
+
+					<h4> you might also like</h4>
+					<hr>
+
+					<div>
+						<p>Return like product of other sizes</p>
+					</div>
+
+			</div>
 							
 		</main>
 

@@ -55,3 +55,23 @@ function customizePillow(y) {
 
 	    }
 	}
+
+//This function will change the image in the the pillow on the product details page
+function selectPillowShape(){
+		//Find out the current size of pillow
+
+
+
+		//Get the pillow shape from the drop down
+		var x = document.getElementById('shape-selector').value;
+		var y= x.value ;
+		console.log(x);
+
+		//Use the current size of pillow and the new pillow shape to find the new picture
+
+		//Need to reference outside JSON file?
+
+
+		//Update the page?
+
+}
