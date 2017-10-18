@@ -57,21 +57,41 @@ function customizePillow(y) {
 	}
 
 //This function will change the image in the the pillow on the product details page
-function selectPillowShape(){
-		//Find out the current size of pillow
+function selectPillowShape(x){
+	//Find out the current size of pillow
 
 
 
-		//Get the pillow shape from the drop down
-		var x = document.getElementById('shape-selector').value;
-		var y= x.value ;
-		console.log(x);
+	//Get the pillow shape from the drop down
+	var x = document.getElementById('shape-selector').value;
+	var y = x.value ;
+	console.log(x);
 
-		//Use the current size of pillow and the new pillow shape to find the new picture
+  //Replace the product name in breadcrumb, title and in the Product Description (same value)
+  var productName = products[x].name;
+  var pageTitle = document.getElementById("page-product-name");
+	var pageProductTitle = document.getElementById("title-product-name");
+	var prodDescriptionOne = document.getElementById("description-name-1");
+	var prodDescriptionTwo = document.getElementById("description-name-2");
+	pageTitle.innerHTML = productName;
+	pageProductTitle.innerHTML = productName;
+	prodDescriptionOne.innerHTML = productName;
+	prodDescriptionTwo.innerHTML = productName;
 
-		//Need to reference outside JSON file?
+  //Update breadcrumb with correct product ID
+  var productID = products[x].id;
+  var pageProductID = document.getElementById("item-number-span");
+  pageProductID.innerHTML = productID;
 
 
-		//Update the page?
+  //Update title of the page with the correct product description
+
+  //Update product image
+  var productImage = products[x].image;
+	var pageProductImage = document.getElementById("detail-product-image");
+	pageProductImage.src = productImage;
+
+  //Change the item description
 
 }
+
