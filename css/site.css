@@ -458,13 +458,12 @@ input.text-input{
 	width: 240px;
 	float: right;
 	display: block;
-	text-transform: capitalize;
 	font-family: "Josefin Sans";
 	border-radius: 1px;
-    font-weight: 300;
-    font-style: italic;
-    font-size: 1.125em;
-    padding-left: 20px;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1.125em;
+  padding-left: 20px;
 }
 
 

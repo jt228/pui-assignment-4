@@ -1,7 +1,7 @@
 <!DOCUMENT html>
 <html>
 	<head>
-		<title>Flip Stitch Pillows - Our Products</title>
+		<title>Flip Stitch Pillows - Shopping Bag</title>
 
 
 		<!--Stylesheets-->
@@ -13,14 +13,18 @@
 		<link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Josefin+Sans:700,600,500,300,100" rel="stylesheet">
 
 		<!--If using jQuery or Javascript-->	
-		<script src='js/myscript.js'></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src='js/myscript.js'></script>
+		<script type="text/javascript" src="js/helpers.js"></script>
+		<script type="text/javascript" src="js/bag.js"></script>
+		<script type="text/javascript" src="js/products.js"></script>
+		
 
 	</head>
 
 	<body>
 
 	<!-- This is the navigational section-->
-
 		<div class="navbar">
 			<div class="row nav-elements">
 
@@ -38,7 +42,7 @@
 				
 				<!-- Navbar- Go to pages associated with shopper-->
 				<span class="account">
-					<a href="bag.html" id="bag">bag</a>
+					<a href="bag.html" id="bag">bag <span id="bag-item-total"></span></a>
 					<a>your account</a>
 				</span>
 			</div>
@@ -61,36 +65,37 @@
 
 					<div id="total-item-div">
 
-						<label class="total-label-style" id="total-items">Items (0)</label>
+						<label class="total-label-style" id="total-items">Items <span id="bag-page-item-total">(0)</span></label>
 
 					</div>
 
 
 					<!-- Product Details Section - Additional Details-->
-					<div class="order-item-row">
+					<div class="order-item-row" id="all-bag-contents">
 
 						<!-- Product Details Section - Customizaton-->		
+						<div class="order-group" id="template-item-div">
 
-
-						<div class="order-group">
 							<!-- Product Details Section - Select Customization-->
 							<div class="col-2 shopping-cart-img-container">
-								<img class="shopping-cart-img" src="images/preview-couch-bear.png">
+								<a href="detail.html">
+									<img class="shopping-cart-img" src="images/preview-couch-bear.png" id="bag-preview-image">
+								</a>
 							</div>
 
 							<div class="col-10">
 							
-								<label class="col-6 order-row-font-style item-name">Item Name</label>
+								<label class="col-6 order-row-font-style item-name" id="item-name-label">Item Name</label>
 
 								<div class="col-6 price-group">
 									
-									<label class="order-row-font-style">$335</label>
+									<label class="order-row-font-style">$<span id="span-item-price">335</span></label>
 									
 									<label class="order-row-font-style multiplier">x</label>
 									
-									<input class="styled-select" value="1"></input>
+									<input class="styled-select" type="text" value="1" id="quantity-id"></input>
 									
-									<label class="order-row-font-style">$335</label>
+									<label class="order-row-font-style"><span id="span-item-price-total">$335</span></label>
 								
 								</div>
 						
@@ -106,16 +111,17 @@
 								<div class="col-12 item-span-styling">
 									
 									<button class="tertiary-button">edit</button>
-
 									
-									<button class="tertiary-button">remove</button>
+									<button class="tertiary-button" onclick="removeItemFromBag()" id="remove-button">remove</button>
 
 								</div>
 
 							</div>
 
 						</div>
+						<!--End of first item-->
 
+					<!--END OF BAG-->
 					</div>
 
 			</div>
@@ -131,24 +137,24 @@
 						<!-- Product Details Section - Enter Quantity-->
 						<div id="total-span">
 							<label class="total-label-style major-number " id="subtotal-label">Subtotal</label>
-							<label class="total-label-value  major-number" id="subtotal-value">Subtotal Value</label>
+							<label class="total-label-value  major-number" id="subtotal-value">$ 0.00</label>
 						</div>
 
 						<div id="total-span">
 							<label class="total-label-style minor-number" id="shipping-label">Shipping</label>
-							<label class="total-label-value minor-number" id="shipping-value">Shipping Value</label>
+							<label class="total-label-value minor-number" id="shipping-value">0.00</label>
 						</div>
 
 						<div id="total-span">
 							<label class="total-label-style minor-number" id="tax-label">Tax</label>
-							<label class="total-label-value minor-number" id="tax-value">Tax value</label>
+							<label class="total-label-value minor-number" id="tax-value">0.00</label>
 						</div>
 
 						<hr>
 
 						<div id="total-span">
 							<label class="total-label-style" id="total-label">Total</label>
-							<label class="total-label-value major-number" id="total-value">Total</label>
+							<label class="total-label-value major-number" id="total-value">$ 0.00</label>
 						</div>
 						<button id="checkout-button">checkout now</button>					
 
@@ -161,6 +167,8 @@
 				</div>
 							
 		</main>
+		<div class="row" style="height:200px; width:100%">
+			</div>
 
 	<!--END OF MAIN -->
 

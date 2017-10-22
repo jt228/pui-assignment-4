@@ -92,6 +92,10 @@ function selectPillowShape(x){
 	pageProductImage.src = productImage;
 
   //Change the item description
+  var productShapeDescription = products[x].description;
+  var pageProductShapeDescription = document.getElementById("product-description-text");
+  pageProductShapeDescription.innerHTML = productShapeDescription;
+
 
 }
 

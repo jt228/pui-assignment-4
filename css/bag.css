@@ -177,3 +177,7 @@ hr{
 #checkout-button{
 	margin-top: 0px;
 }
+
+#template-item-div{
+  visibility: hidden;
+}

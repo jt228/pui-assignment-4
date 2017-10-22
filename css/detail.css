@@ -66,7 +66,7 @@
 	padding-top: 10px;
 	padding-bottom: 10px;
 	min-height: 100px;
-
+	text-transform: none;
 }
 
 /* Class to style Product Description group */
@@ -95,3 +95,4 @@
 #custom-request-section{
 	display: none;
 }
+
