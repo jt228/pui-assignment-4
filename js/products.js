@@ -1,7 +1,7 @@
 var products = {
 
   "couchBear": {
-      "name": "Murphy Brown",
+      "name": "Couch Bear",
       "id": "CB123",
       "size": "couch",
       "shape": "bear",
@@ -72,4 +72,73 @@ var products = {
       "description": "Camouflage your comfort creature on your virgin sheepskin throw. Place him face down when company’s over; flip him over when you need a real pal.",
     },
 
+    "poufBear":{
+      "name": "pouf bear",
+      "id": "PB123",
+      "size": "pouf",
+      "shape": "bear",
+      "price": "535",
+      "image": "images/pouf-bear.png",
+      "preview": "images/preview-pouf-bear.png",
+      "link": "detail.html",
+      "description": "Support is a necessary part of life. Lean on a pouf bear as you read the news, consoling you when it's bad.",
+    },
+
+    "bodyBear":{
+      "name": "body bear",
+      "id": "BB123",
+      "size": "body",
+      "shape": "bear",
+      "price": "735",
+      "image": "images/body-bear.png",
+      "preview": "images/preview-body-bear.png",
+      "link": "detail.html",
+      "description": "Modern beds look great, but they can feel cold. Body bears can warm your sheets and heart.",
+    },
+
+    "roundBear":{
+      "name": "round bear",
+      "id": "RB123",
+      "size": "round",
+      "shape": "bear",
+      "price": "1035",
+      "image": "images/round-bear.png",
+      "preview": "images/preview-round-bear.png",
+      "link": "detail.html",
+      "description": "Do you really need this? The answer is yes.",
+    },
+
 }
+
+
+$(document).ready(function(){
+  //  var pageTitleInHead = $this.find("title").text();
+    //if( pageTitleInHead === "Flip Stitch Pillows - Product Details"){
+     // $('#product-tile-template').text("This is stub text");
+    //};
+  var productArray =Object.keys(products);
+
+  console.log(productArray.length);
+
+  for (i=(productArray.length-1); i >=0 ; i--){
+
+     //Get the product key that will set the current product
+    var productArrayKey = productArray[i];
+
+    //Get the custoemer friendly name
+    var productName = products[productArrayKey]["name"];
+
+    //Get the product price to display on tile
+    var productPrice = products[productArrayKey]["price"];
+
+    //Get the product image "preview"
+    var productPreview= products[productArrayKey]["preview"];   
+
+    console.log(productArrayKey+" "+productPrice+" "+productPreview+" "+productName );
+
+    //Generate tile
+    getProductTiles(productName,productPrice,productPreview,productArrayKey).appendTo('#product-shopping-section').insertBefore('#product-tile-template');
+    };
+
+    
+  });

@@ -12,11 +12,10 @@
 
 		<!--If using jQuery or Javascript-->	
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src='js/myscript.js'></script>
-		<script type="text/javascript" src="js/helpers.js"></script>
 		<script type="text/javascript" src="js/bag.js"></script>
 		<script type="text/javascript" src="js/products.js"></script>
-
+		<script type="text/javascript" src="js/helpers.js"></script>
+		
 	</head>
 
 	<body>
@@ -41,7 +40,7 @@
 				<!-- Navbar- Go to pages associated with shopper-->
 				<span class="account">
 					<a href="bag.html">bag <span id="bag-item-total"></span></a>
-					<a>your account</a>
+					<a href="account.html" id="account">your account</a>
 				</span>
 			</div>
 		</div>
@@ -233,58 +232,17 @@
 
 					<!-- This is the section with the grid of products -->
 
-					<section class="shopping-section">
+					<section class="shopping-section" id="product-shopping-section">
 						
-						<!-- ITEM 1 in Grid -->
-						<article class="product-tile">
+						<!--TEMPLATE-->
+						<article class="product-tile"  id="product-tile-template">
 							<a href="detail.html">
 								<div>
-									<img src="images/preview-couch-bear.png">
+									<img src="images/preview-couch-bear.png" id="product-tile-image">
 								</div>
 								<div class="product-tile-content">
-									<p class="product-tile-label">Couch Bear</p>
-									<p class="product-tile-price">$335</p>
-								</div>
-							</a>
-						</article>
-
-
-						<!-- ITEM 2 in Grid -->
-						<article class="product-tile">
-							<a href="detail-pouf-bear.html">
-								<div>
-									<img src="images/preview-pouf-bear.png">
-								</div>
-								<div class="product-tile-content">
-									<p class="product-tile-label">Pouf Bear</p>
-									<p class="product-tile-price">$535</p>
-								</div>
-							</a>
-						</article>
-
-						<!-- ITEM 3 in Grid -->
-						<article class="product-tile">
-							<a href="detail-body-bear.html">
-								<div>
-									<img src="images/preview-body-bear.png">
-								</div>
-								<div class="product-tile-content">
-									<p class="product-tile-label">Body Bear</p>
-									<p class="product-tile-price">$735</p>
-								</div>
-							</a>
-						</article>
-
-
-						<!-- ITEM 4 in Grid -->
-						<article class="product-tile">
-							<a href="detail.html">
-								<div>
-									<img src="images/preview-round-bear.png">
-								</div>
-								<div class="product-tile-content">
-									<p class="product-tile-label">Round Bear</p>
-									<p class="product-tile-price">$1035</p>
+									<p class="product-tile-label" id="product-tile-name">Couch Bear</p>
+									<p class="product-tile-price" id="product-tile-price-label">$335</p>
 								</div>
 							</a>
 						</article>

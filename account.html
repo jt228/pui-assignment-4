@@ -1,7 +1,7 @@
 <!DOCUMENT html>
 <html>
 	<head>
-		<title>Flip Stitch Pillows - Shopping Bag</title>
+		<title>Flip Stitch Pillows - Your Account</title>
 
 
 		<!--Stylesheets-->
@@ -54,17 +54,36 @@
 
 			<!-- Page Header-->
 
-			<div class="col-8">
-				<h2 class="page-title">shopping bag</h2>
+			<div class="col-12">
+				<h2 class="page-title">your account</h2>
+			</div>
+
+
+			<!-- Product Details Section - Order Widgets-->
+			<div class="col-3" >
+
+				<!-- Product Details Section - Enter Quantity-->
+				<div id="total-span">
+					<label class="total-label-style minor-number" id="shipping-label">Your Info</label>
+				</div>
+
+				<div id="total-span">
+					<label class="total-label-style">Wishlist</label>
+				</div>
+		
+
+			</div>
 			
 			
+
 			<!-- Product Detail Section-->
 
 					<!-- Count of items -->
+				<div class="col-9">	
 
 					<div id="total-item-div">
 
-						<label class="total-label-style" id="total-items">Items <span id="bag-page-item-total">(0)</span></label>
+						<label class="total-label-style" id="total-items">Wishlist Items <span id="bag-page-item-total">(0)</span></label>
 
 					</div>
 
@@ -109,7 +128,7 @@
 
 								<div class="col-12 item-span-styling">
 									
-									<button class="tertiary-button">edit</button>
+									<button class="tertiary-button">add to bag</button>
 									
 									<button class="tertiary-button" onclick="removeItemFromBag()" id="remove-button">remove</button>
 
@@ -130,40 +149,7 @@
 				<div class="col-4" id="shopping-cart-total">
 
 
-					<!-- Product Details Section - Order Widgets-->
-					<div class="total-section" >
 
-						<!-- Product Details Section - Enter Quantity-->
-						<div id="total-span">
-							<label class="total-label-style major-number " id="subtotal-label">Subtotal</label>
-							<label class="total-label-value  major-number" id="subtotal-value">$ 0.00</label>
-						</div>
-
-						<div id="total-span">
-							<label class="total-label-style minor-number" id="shipping-label">Shipping</label>
-							<label class="total-label-value minor-number" id="shipping-value">0.00</label>
-						</div>
-
-						<div id="total-span">
-							<label class="total-label-style minor-number" id="tax-label">Tax</label>
-							<label class="total-label-value minor-number" id="tax-value">0.00</label>
-						</div>
-
-						<hr>
-
-						<div id="total-span">
-							<label class="total-label-style" id="total-label">Total</label>
-							<label class="total-label-value major-number" id="total-value">$ 0.00</label>
-						</div>
-						<button id="checkout-button">checkout now</button>					
-
-					</div>
-
-					<!-- Product Details Section - Button to complete-->
-
-
-
-				</div>
 							
 		</main>
 		<div class="row" style="height:200px; width:100%">

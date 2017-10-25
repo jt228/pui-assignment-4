@@ -520,8 +520,40 @@ p.product-tile-label{
 	text-decoration: none;
 }
 
+
+#product-tile-template{
+	visibility: hidden;
+}
+
 /* Sections for details on the right hand size of page */
 
 .left-panel {
 	padding-bottom: 40px;
 }
+
+
+/*Shoppoing Modal stuff
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(256,256,256, 0.6);
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+

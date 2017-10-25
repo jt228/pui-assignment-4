@@ -1,12 +1,17 @@
 //This file is intended for tracking the goods ths user adds to his or her shopping bag
 
 var shoppingBag = JSON.parse(localStorage.getItem("shoppingBag") || "[]");
-var clicked;
 var totalItems = JSON.parse(localStorage.getItem("totalItems") || "[]");
+var wishList;
 
+//Current product that is being viewed
+
+
+
+//Calculate the Subtotal, Tax, and Total
 var shoppingBagSubtotal=0;
-var shoppingBagTax=Math.round(shoppingBagSubtotal*.087).toFixed(2);
-var shoppingBagTotal = shoppingBagSubtotal+shoppingBagTax;
+var shoppingBagTax=0;
+var shoppingBagTotal =0;
 
 function itemAddedToBag (selector,id,name,shape,size,quantity,request,price,preview,link){
   this.selector=selector;
@@ -21,11 +26,11 @@ function itemAddedToBag (selector,id,name,shape,size,quantity,request,price,prev
   this.link= link;
 }
 
-function itemBag(id){
-  this.start ='<div class="col-2 shopping-cart-img-container">';
-  this.id = id;
-  this.end = '</div>';
-}
+// function itemBag(id){
+//   this.start ='<div class="col-2 shopping-cart-img-container">';
+//   this.id = id;
+//   this.end = '</div>';
+// }
 
 
 //Get the user's selection from the page and add them to the bag
@@ -62,16 +67,11 @@ function addItemToBag(){
   localStorage.setItem("shoppingBag", JSON.stringify(shoppingBag));
   //Update the total number of items
   calculateTotalItems();
-  console.log(totalItems);
+
+  currentProductBeingViewed(itemSelector);
+  
+  location.reload();
   }
-
-window.onload= function(){
-  //For each item in the bag, display it on the shopping bag page
-  //shoppingBag=localStorage.getItem("shoppingBag");
-  console.log(shoppingBag);
-  console.log(totalItems);
-
-}
 
 
  // jQuery methods go here...
@@ -81,8 +81,6 @@ $(document).ready(function(){
   //result= "";
   if(shoppingBag.length != false){
     //If the visitor has placed items in the bag, they should display
-    console.log(shoppingBag.length);
-
 
     var totalItems = shoppingBag.length;
 
@@ -98,7 +96,8 @@ $(document).ready(function(){
       var quantity = shoppingBag[i].quantity;
       var price = shoppingBag[i].price;
       var preview = shoppingBag[i].preview;
-      getListItem(id,name,quantity,price,preview).appendTo('#all-bag-contents').insertBefore('#template-item-div');
+      var selector = shoppingBag[i].selector;
+      getListItem(id,name,quantity,price,preview,selector).appendTo('#all-bag-contents').insertBefore('#template-item-div');
     }
   } else {
     //If there is nothing in the bag, display that bag is empty
@@ -111,11 +110,6 @@ $(document).ready(function(){
 
 
 function removeItemFromBag(){
-  //Remove the total collection of items 
-  
-  //Get the ID of the item being removed.
-
-  //Remove the item from local storage.
 
   //shoppingBag.splice(0,0);
   // localStorage.setItem('shoppingBag', JSON.stringify('shoppingBag'));
@@ -137,6 +131,7 @@ function removeItemFromBag(){
   //$("#remove-button").parents(test).remove();
   console.log("no of items in bag is "+shoppingBag.length);
   }
+
 
 function calculateTotalItems(){
   totalItems=shoppingBag.length;
