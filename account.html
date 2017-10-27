@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="css/site.css" type="text/css">
 		<link rel="stylesheet" href="css/detail.css" type="text/css">
 		<link rel="stylesheet" href="css/bag.css" type="text/css">
+		<link rel="stylesheet" href="css/account.css" type="text/css">
 
 		<!--Fonts-->
 		<link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Josefin+Sans:700,600,500,300,100" rel="stylesheet">
@@ -17,6 +18,7 @@
 		<script type="text/javascript" src="js/helpers.js"></script>
 		<script type="text/javascript" src="js/bag.js"></script>
 		<script type="text/javascript" src="js/products.js"></script>
+		<script type="text/javascript" src="js/account.js"></script>
 		
 
 	</head>
@@ -83,13 +85,13 @@
 
 					<div id="total-item-div">
 
-						<label class="total-label-style" id="total-items">Wishlist Items <span id="bag-page-item-total">(0)</span></label>
+						<label class="total-label-style" id="wishlist-total-items-label">Wishlist Items <span id="wishlist-item-total">(0)</span></label>
 
 					</div>
 
 
 					<!-- Product Details Section - Additional Details-->
-					<div class="order-item-row" id="all-bag-contents">
+					<div class="order-item-row" id="wishlist-contents">
 
 						<!-- Product Details Section - Customizaton-->		
 						<div class="order-group" id="template-item-div">
@@ -118,19 +120,19 @@
 								</div>
 						
 								<div class="col-12 item-span-styling">
-									<a class="p1" onclick="toggleVisibility()">Custom Request</a>
+									<a class="p1" onclick="toggleVisibility()" id="custom-request-link">Custom Request</a>
 								
 									<div class="order-group" id="custom-request-section">
 										<p class="p1">How do you want to customize your pillow?</p>
-										<textarea class="custom-input" type="text" name="customize" class="text-input" placeholder="Enter request here."></textarea>
+										<textarea class="custom-input" type="text" name="customize" class="text-input" placeholder="Enter request here." id="custom-request-text"></textarea>
 									</div>
 								</div>
 
 								<div class="col-12 item-span-styling">
 									
-									<button class="tertiary-button">add to bag</button>
+									<button class="tertiary-button" onclick="sendToShoppingBag()">add to bag</button>
 									
-									<button class="tertiary-button" onclick="removeItemFromBag()" id="remove-button">remove</button>
+									<button class="tertiary-button" onclick="removeItemFromWishList()" id="remove-button">remove</button>
 
 								</div>
 

@@ -1,0 +1,25 @@
+/* Navigation */
+
+#account {
+	border-bottom: 2px #c5d3dd solid;
+    padding-bottom: 20px;
+    text-decoration: none;
+}
+
+#bag{
+  border-bottom: none;
+}
+
+#home:hover {
+	border-bottom: 2px #5a6c7b solid;
+    padding-bottom: 13px;
+}
+
+
+#wishlist-total-items-label {
+  width: 100%;
+}
+
+#template-item-div{
+  visibility: hidden;
+}

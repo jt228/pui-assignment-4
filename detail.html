@@ -17,29 +17,23 @@
 		<script type="text/javascript" src='js/helpers.js'></script>	
 		<script type="text/javascript" src="js/bag.js"></script>
 		<script type="text/javascript" src="js/products.js"></script>
+		<script type="text/javascript" src="js/account.js"></script>
 		
 
 	</head>
 
 	<body>
-
 	<!-- This is the navigational section-->
-
 		<div class="navbar">
 			<div class="row nav-elements">
-
 				<!--Navbar - Logo-->
 				<a id="home" href="index.html" >
 					<img id="logo" src="images/logo.png" >
 				</a>
-
 				<!-- Navbar- Go to Products Page-->
 				<a class="nav-item" href="products.html" id="products">Our Products</a>
-				
 				<!-- Navbar- Go to Our Story Page-->
-				<a class="nav-item" href="story.html" id="story">Our Story</a>
-
-				
+				<a class="nav-item" href="story.html" id="story">Our Story</a>			
 				<!-- Navbar- Go to pages associated with shopper-->
 				<span class="account">
 					<a href="bag.html">bag <span id="bag-item-total"></span></a>
@@ -47,167 +41,122 @@
 				</span>
 			</div>
 		</div>
-
 	<!-- Bread Crumb Div - empty here -->
-
 		<div class="breadcrumb">
 			<a href="products.html">Our Products</a><span class="page-indicator">/</span> <span id="page-product-name">Couch Bear</span>
 		</div>
-
-
-
 	<!-- This is the main part of the page-->
 		<main>
-
-
 			<!-- Page Header-->
-
 			<div class="row">
 				<h2 class="page-title" id="title-product-name">Couch bear</h2>
 			</div>
-
-			
 			<!-- Product Detail Section-->
 			<div class="row">
-
 				<div class="col-8 left-panel">
-
 						<!-- Product Detail Image-->
 					<div class="product-detail">
 						<img id="detail-product-image" src="images/couch-bear.png">
 					</div>
-
 					<!-- Product Details Section - Additional Details-->
 					<div class="col-8" id="details">
-
 						<div id="product-description">
 							<h5>Product Description</h5>
 							<p class="p1"> 
 									Every detail of the <span id="description-name-1">Couch Bear</span> was hand-selected and reflects <b>Flip/Stich's</b> passion for perfection. This pillow fits snugly in the arms of adults, just like your childhood teddy bear. The <span id="description-name-2">Couch Bear</span> is the ideal after-work companion to share a glass of rosé or to cover your eyes while watching <i>Get Out</i>. Crafted with locally sourced materials, including our founders' favorites - recycled Heinz Ketchup bottles and abandoned Pirates jerseys.
 							</p>
-							</div>
-
-							<!-- Product Details Section - Materials-->
-							<div >
-								<h5 class="product-specifications-group">Materials</h5>
-								<ul class="product-specifications-list"> 
-									<li class="p1">Genuine polyester fur.</li>
-									<li class="p1">Cotton-thread embroidery</li>
-									<li class="p1">Cotton/poly fill.</li>
-									<li class="p1">Handmade in Pittsburgh.</li>
-								</ul>
-							</div>
-
-							<!-- Product Details Section - Dimensions-->
-							<div >
-								<h5 class="product-specifications-group">Dimensions</h5>
-								<ul class="product-specifications-list"> 
-									<li class="p1">Approximately 36" x 28" x 8".</li>
-									<li class="p1">2 pounds.</li>
-								</ul>
-							</div>
 						</div>
-
+						<!-- Product Details Section - Materials-->
+						<div >
+							<h5 class="product-specifications-group">Materials</h5>
+							<ul class="product-specifications-list"> 
+								<li class="p1">Genuine polyester fur.</li>
+								<li class="p1">Cotton-thread embroidery</li>
+								<li class="p1">Cotton/poly fill.</li>
+								<li class="p1">Handmade in Pittsburgh.</li>
+							</ul>
+						</div>
+						<!-- Product Details Section - Dimensions-->
+						<div >
+							<h5 class="product-specifications-group">Dimensions</h5>
+							<ul class="product-specifications-list"> 
+								<li class="p1">Approximately 36" x 28" x 8".</li>
+								<li class="p1">2 pounds.</li>
+							</ul>
+						</div>
 					</div>
-							
-
+				</div>
 					<!-- Product Details Section - Order Form-->
 					<div class="col-4">
-
 						<!-- Product Details Section - Title, price, description-->
 						<h4 class="product-price">$<span id="item-price-span">335</span></h4>
 						<p class="p1">Item No: <span id="item-number-span">CB123</span></p>
-
 						<p id="product-description-text">Curl up with this charismatic emblem of childhood which adds sophistication and warmth to any room. Scaled  to enhance the comfort of the modern couch.</p>
-
-
 						<!-- Product Details Section - Link to Additional Details-->
 						<a class="p-link" href="#details" id="details">Product Details</a>
-
-
 						<!-- Product Details Section - Order Widgets-->
 						<div class="order-section">
-
 						<!-- Product Details Section - Customizaton-->
 							<div class="order-group" id="animal-selected">
-
 								<!-- Product Details Section - Select Customization-->
 								<label class="filter-label-name">Shape</label>
-
 								<select class="styled-select" id="shape-selector" onchange="selectPillowShape()">
-
 									<option class="selectable-option" value="couchBear">Bear</option>
 									<option class="selectable-option" value="couchCat">Cat</option>
 									<option class="selectable-option" value="couchDog">Dog</option>
 									<option class="selectable-option" value="couchRabbit">Rabbit</option>
 									<option class="selectable-option" value="couchRound">Round</option>
 									<option class="selectable-option" value="couchSquare">Square</option>
-
 								</select>
 							</div>
-
 							<!-- Product Details Section - Enter Quantity-->
 							<div class="order-group">
-
-
 								<label class="filter-label-name">Quantity</label>
-
 								<input class="styled-input" value="1" id="quantity-requested"></input>
-
 							</div>
-
 							<!-- Product Details Section - Customizaton-->
 							<div class="order-group">
-
 								<!-- Product Details Section - Select Customization-->
 								<label class="filter-label-name">Customize Pillow</label>
-
 								<select class="styled-select" onchange="customizePillow(this)">
-
 									<option class="selectable-option" value="0">No</option>
 									<option class="selectable-option" value="1">Yes</option>
-
 								</select>
 							</div>
-
-
-
 							<!-- Product Details Section - Customization Option box that expands when answer is "Yes"-->
 							<div class="order-group" id="custom-request-section">
 								<p class="p1">How do you want to customize your pillow?</p>
 								<textarea class="custom-input" type="text" name="customize" class="text-input" placeholder="Enter request here." id="custom-request"></textarea>
 							</div>
 						</div>
-
 					<!-- Product Details Section - Button to complete-->
 					<button onclick="addItemToBag()">Add to Bag</button>
-
-
+					<button class="secondary-button" onclick="addItemToWishList()">Add to WishList</button>
 				</div>
-
 			</div>
-
 				<!-- Related products -->
-			<div class="col-12">
-
-					<h4> you might also like</h4>
-					<hr>
-
-					<div>
-						<p>Return like product of other sizes</p>
-					</div>
-
-			</div>
-							
+<!-- 			<div class="col-12">
+				<h4> you might also like</h4>
+				<hr>
+				<div>
+					<p>Return like product of other sizes</p>
+				</div>
+			</div> -->
 		</main>
 
 	<!--END OF MAIN -->
 
-<div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
+<div id="detail-page-modal" class="modal" onclick="closeModal()">
   <div class="modal-content">
-  		words
-
+		<p id="modal-text">Added to your shopping bag!</p>
+		<div>
+			<button onclick="closeModal()">Continue Shopping</button>
+		</div>
+		<div>
+			<a href="bag.html" id="destination-link">
+				<button class="secondary-button" id="destination">Continue to checkout</button>
+			</a>
+		</div>
   </div>
 </div>
 		

@@ -269,13 +269,21 @@ button:hover{
 }
 
 
+button.secondary-button{
+	background: #ffffff;
+	border: #5a6c7b 1px solid;
+	color: #5a6c7b;
+	margin-top: 0px;
+}
+
+
 button.tertiary-button{
 	height: 30px;
-	width: 100px;
+	width: 150px;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 1.125em;
 	text-transform: lowercase;
-	font-weight: 100;
+	font-weight: 150;
 	background: white;
 	color:black;
 	padding: 4px;
@@ -349,6 +357,7 @@ p{
 
 a {
 	color: #2b7991;
+	text-decoration: none;
 }
 
 a:hover {
@@ -535,10 +544,9 @@ p.product-tile-label{
 /*Shoppoing Modal stuff
 /* The Modal (background) */
 .modal {
-  display: none;
+  visibility: hidden;
   position: fixed;
   z-index: 1;
-  padding-top: 100px;
   left: 0;
   top: 0;
   width: 100%;
@@ -550,10 +558,13 @@ p.product-tile-label{
 /* Modal Content */
 .modal-content {
   position: relative;
+  text-align: center;
   background-color: #fefefe;
   margin: auto;
-  padding: 0;
-  width: 90%;
+  top:300px;
+  width: 600px;
+  padding:30px;
+  margin:auto;
   max-width: 1200px;
 }
 

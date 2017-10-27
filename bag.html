@@ -17,6 +17,7 @@
 		<script type="text/javascript" src="js/helpers.js"></script>
 		<script type="text/javascript" src="js/bag.js"></script>
 		<script type="text/javascript" src="js/products.js"></script>
+		<script type="text/javascript" src="js/account.js"></script>
 		
 
 	</head>
@@ -99,17 +100,17 @@
 								</div>
 						
 								<div class="col-12 item-span-styling">
-									<a class="p1" onclick="toggleVisibility()">Custom Request</a>
+									<a class="p1" onclick="toggleVisibility()" id="custom-request-link">Custom Request</a>
 								
 									<div class="order-group" id="custom-request-section">
 										<p class="p1">How do you want to customize your pillow?</p>
-										<textarea class="custom-input" type="text" name="customize" class="text-input" placeholder="Enter request here."></textarea>
+										<textarea class="custom-input" type="text" name="customize" class="text-input" placeholder="Enter request here." id="custom-request-text"></textarea>
 									</div>
 								</div>
 
 								<div class="col-12 item-span-styling">
 									
-									<button class="tertiary-button">edit</button>
+									<button class="tertiary-button" onclick="sendToWishList()">send to wishlist</button>
 									
 									<button class="tertiary-button" onclick="removeItemFromBag()" id="remove-button">remove</button>
 

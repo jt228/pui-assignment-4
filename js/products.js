@@ -1,3 +1,5 @@
+///This document contains a JSON file of all Flip/Stich's products and JQUERY to generate a page based on that JSON
+
 var products = {
 
   "couchBear": {
@@ -110,35 +112,22 @@ var products = {
 
 }
 
-
+//Dyanimically generate 
 $(document).ready(function(){
-  //  var pageTitleInHead = $this.find("title").text();
-    //if( pageTitleInHead === "Flip Stitch Pillows - Product Details"){
-     // $('#product-tile-template').text("This is stub text");
-    //};
+  //Get the Key values for the JSON object.
   var productArray =Object.keys(products);
-
-  console.log(productArray.length);
-
+  //Loop through the array of objects and get the necessary properties to display in tiles.
+  //List the objects in the same order as they are in the JSON file
   for (i=(productArray.length-1); i >=0 ; i--){
-
      //Get the product key that will set the current product
     var productArrayKey = productArray[i];
-
     //Get the custoemer friendly name
     var productName = products[productArrayKey]["name"];
-
     //Get the product price to display on tile
     var productPrice = products[productArrayKey]["price"];
-
     //Get the product image "preview"
     var productPreview= products[productArrayKey]["preview"];   
-
-    console.log(productArrayKey+" "+productPrice+" "+productPreview+" "+productName );
-
     //Generate tile
     getProductTiles(productName,productPrice,productPreview,productArrayKey).appendTo('#product-shopping-section').insertBefore('#product-tile-template');
     };
-
-    
   });
