@@ -1,239 +1,138 @@
 <!DOCUMENT html>
+<meta charset="utf-8">
 <html>
 	<head>
 		<title>Flip Stitch Pillows - Our Products</title>
-
 		<!--Stylesheets-->
-		<link rel="stylesheet" href="css/site.css" type="text/css">
-		<link rel="stylesheet" href="css/products.css" type="text/css">
-		
+		<link rel="stylesheet" href="css/site.css">
+		<link rel="stylesheet" href="css/products.css">
 		<!--Fonts-->
-		<link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Josefin+Sans:700,600,500,300,100" rel="stylesheet">
-
+		@import 'https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Josefin+Sans:700,600,500,300,100' 
 		<!--If using jQuery or Javascript-->	
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script type="text/javascript" src="js/bag.js"></script>
-		<script type="text/javascript" src="js/products.js"></script>
-		<script type="text/javascript" src="js/helpers.js"></script>
-		
+		<script src="js/bag.js"></script>
+		<script src="js/products.js"></script>
+		<script src="js/helpers.js"></script>		
 	</head>
 
 	<body>
 
 	<!-- This is the navigational section-->
 
-		<div class="navbar">
+		<nav class="nav">
 			<div class="row nav-elements">
-
 				<!--Navbar - Logo-->
 				<a id="home" href="index.html" >
 					<img id="logo" src="images/logo.png" >
 				</a>
-
 				<!-- Navbar- Go to Products Page-->
-				<a class="nav-item" href="products.html" id="products">Our Products</a>
-				
+				<a class="nav-item" href="products.html" id="products">Our Products</a>				
 				<!-- Navbar- Go to Our Story Page-->
 				<a class="nav-item" href="story.html" id="story">Our Story</a>
-
-				
 				<!-- Navbar- Go to pages associated with shopper-->
 				<span class="account">
 					<a href="bag.html">bag <span id="bag-item-total"></span></a>
 					<a href="account.html" id="account">your account</a>
 				</span>
 			</div>
-		</div>
+		</nav>
 
 
 	<!-- This is the main part of the page-->
 
 	<!-- For the purposes of simplification, this page was "prefiltered" to show the states of the filters and to limit the number of illustratrions/images for this project-->
-
 		<main>
-
 			<div class="row">
 				<h2 class="page-title">our products</h2>
 			</div>
-
 			<div class="row">
-
 				<!-- Group of filters that help the user select the right size and shape of filter -->
-
 				<div class="col-3">
-
-
 					<!-- Filter Group 1 by Category: Size -->
-
 					<div class="filter-spacing">
 						<label class="filter-label-name">Size</label>
 						<a class="p1" onclick="showSizeFilter(this)" id="size-filter-link">Select</a>
 					</div>
-
-
 					<div class="collapsible-filter" id="size-filters">
-
-
 						<!-- Filter by Size label #1 - Size - Couch -->
-
 						<div class="filter-item">
-
 							<input type="checkbox" class="custom-checkbox" checked="checked">
-							
 							<label class="filter-label">Couch</label>
-
 						</div>
-
 						<!-- Filter by Size label #2 - Size - Pouf -->
-
 						<div class="filter-item">
-
 							<input type="checkbox" class="custom-checkbox" checked="checked">
-							
 							<label class="filter-label">Pouf</label>
-							
 						</div>
-
 						<!-- Filter by Size label #3 - Size - Body -->
-
 						<div class="filter-item">
-
 							<input type="checkbox" class="custom-checkbox" checked="checked">
-							
 							<label class="filter-label">Body</label>
-							
 						</div>
-
 						<!-- Filter by Size label #4 - Size - Round -->
-
 						<div class="filter-item">
-
-							<input type="checkbox" class="custom-checkbox" checked="checked">
-							
-							<label class="filter-label">Round</label>
-							
+							<input type="checkbox" class="custom-checkbox" checked="checked">							
+							<label class="filter-label">Round</label>							
 						</div>
-
 					</div>
-
-
-
 					<!--Filter Group 2 by Category: Shape-->
-
-
 					<div class="filter-spacing  bottom-filter">
 						<label class="filter-label-name">Shape</label>
 						<a class="p1" onclick="showShapeFilter(this)" id="shape-filter-link">Select</a>
 					</div>
-
-
 					<div class="collapsible-filter" id="shape-filters">
-
-
-
 						<!-- Filter by Shape label #1 - Shape - Bear -->
-
 						<div class="filter-item">
-
-							<input type="checkbox"  class="custom-checkbox" checked="checked">
-							
-							<label class="filter-label">Bear</label>
-							
+							<input type="checkbox"  class="custom-checkbox" checked="checked">							
+							<label class="filter-label">Bear</label>							
 						</div>
-
-
 						<!-- Filter by Shpae label #2 - Shape - Cat -->
-
 						<div class="filter-item">
-
-							<input type="checkbox"  class="custom-checkbox">
-							
-							<label class="filter-label">Cat</label>
-							
+							<input type="checkbox"  class="custom-checkbox">							
+							<label class="filter-label">Cat</label>							
 						</div>
-
-
 						<!-- Filter by Shape label #3 - Shape - Dog -->
-
 						<div class="filter-item">
-
-							<input type="checkbox"  class="custom-checkbox">
-							
-							<label class="filter-label">Dog</label>
-							
+							<input type="checkbox"  class="custom-checkbox">							
+							<label class="filter-label">Dog</label>							
 						</div>
-
-
 						<!-- Filter by Shape label #4- Shape - Bunny -->
-
 						<div class="filter-item">
-
 							<input type="checkbox" class="custom-checkbox">
-							
-							<label class="filter-label">Rabbit</label>
-							
+							<label class="filter-label">Rabbit</label>							
 						</div>
-
-
-
-
 						<!-- Filter by Shape label #5 - Shape - Round -->
-
 						<div class="filter-item">
-
-							<input type="checkbox"  class="custom-checkbox">
-							
-							<label class="filter-label">Round</label>
-							
+							<input type="checkbox"  class="custom-checkbox">							
+							<label class="filter-label">Round</label>							
 						</div>
-
 						<!-- Filter by Shape label #6 - Sahpe - Square -->
-
 						<div class="filter-item">
-
-							<input type="checkbox"  class="custom-checkbox">
-							
+							<input type="checkbox"  class="custom-checkbox">							
 							<label class="filter-label">Square</label>
-
 						</div>
-
 					</div>
-
-
 				</div>
 
-
-
 				<!-- Section with library of products -->
-
-
 				<div class="col-9">
-
 					<section class="form-group">
-						
 						<div>
-
 							<!--Dropdown with sorting options-->
 							<label class="filter-label-name">Sort by</label>
-
 							<select class="styled-select">
 								<option class="selectable-option">Size</option>
 								<option class="selectable-option">Shape</option>
 								<option class="selectable-option" selected="true">Price - Low to High</option>
 								<option class="selectable-option">Price - High to Low</option>
 							</select>
-
 							<!--Search box-->
 							<input type="text" name="search" class="text-input" placeholder="Search"></input>
-						
 						</div>
 					</section>
 
-
 					<!-- This is the section with the grid of products -->
-
 					<section class="shopping-section" id="product-shopping-section">
-						
 						<!--TEMPLATE-->
 						<article class="product-tile"  id="product-tile-template">
 							<a href="detail.html">
@@ -246,30 +145,21 @@
 								</div>
 							</a>
 						</article>
-
 					</section>
-
 				</div>			
-
 			</div>
-
 		</main>
 	<!-- End of Main -->
-
-
 		
 	<!-- This is the footer -->
-		<div class="footer">
-			
-			
+		<footer class="footer">
 			<!-- Footer grouped by topic: Shopping -->
 			<div class="col-2">
-
 				<h6>Shopping</h6>
 				<ul>
 					<li><a href="products.html">Our Products</a></li>
-					<li><a>Your Bag</a></li>
-					<li><a>Your Account</a></li>
+					<li><a hre="bag.html">Your Bag</a></li>
+					<li><a href="account.html">Your Account</a></li>
 				</ul>
 			</div>
 
@@ -282,11 +172,8 @@
 					<li><a>Blog</a></li>
 				</ul>
 			</div>
-
-		</div>
+		</footer>
 
 	<!--End of HTML for footer-->
-
 	</body>
-	
 </html>

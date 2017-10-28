@@ -2,17 +2,17 @@
 
 #bag {
 	border-bottom: 2px #c5d3dd solid;
-    padding-bottom: 20px;
-    text-decoration: none;
+  padding-bottom: 20px;
+  text-decoration: none;
 }
 
 #home:hover {
 	border-bottom: 2px #5a6c7b solid;
-    padding-bottom: 13px;
+  padding-bottom: 13px;
 }
 
 
-/*  */
+/* Header styling */
 h2.page-title{
 	border-bottom: 2px #5a6c7b solid;
 }
@@ -27,34 +27,34 @@ h2.page-title{
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 1.125em;
 	font-weight: 600;
-	text-transform: capitalize;
 	margin-right: 20px;
+  text-transform: capitalize;
 }
 
 .order-row-font-style {
-	font-family: 'Josefin Sans', sans-serif;
+	display: inline-block;
+  font-family: 'Josefin Sans', sans-serif;
 	font-size: 1.125em;
 	font-weight: 500;
 	margin-bottom: 14px;
 	margin-left: 10px;
 	margin-top: 10px;
-	display: inline-block;
-	vertical-align: top;
 	text-transform: capitalize;
+  vertical-align: top;
 }
 
 .order-row-font-style.multiplier{
-	text-transform: lowercase;
 	padding-right: 10px;
+  text-transform: lowercase;
 }
 
 /* Count of the number of items orered */
 
 /* Overall spacing and design of Shopping cart*/
 .order-item-row{
-	width: 100%;
 	min-height: 100px;
 	padding-right: 30px;
+  width: 100%;
 }
 
 .order-group{
@@ -63,8 +63,8 @@ h2.page-title{
 }
 
 .shopping-cart-img{
-	width: 104px;
 	height: auto;
+  width: 104px;
 }
 
 .shopping-cart-img-container{
@@ -82,47 +82,42 @@ h2.page-title{
 .item-name{
 }
 
-/* Editing customization styling */
-
-
-
 /* Input and text elements for prices, quantities and item totals*/
-
 .styled-select{
-	background: url("../images/down-arrow.svg") no-repeat 30% 5px 5px 5px 3px;
-	height: 40px;
-	overflow: hidden;
-	width: 80px;
+	background: url(../images/down-arrow.svg) no-repeat 30% 5px 5px 5px 3px;
 	border-color: #dfe0e0;
-	-webkit-appearance: none;
-  	-webkit-border-radius: 0px;
-  	font-family: "Josefin Sans";
+  display: inline-block;
+  float: none;
+  font-family: "Josefin Sans";
 	font-size: 1.125em;
 	font-weight: 300;
+  height: 40px;
+  margin-right: 20px;
+  overflow: hidden;
 	padding-left: 20px;
-	margin-right: 20px;
 	position: inline-block;
-	float: none;
-    display: inline-block;
-    vertical-align: middle;  
+	vertical-align: middle; 
+  width: 80px;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px; 
 }
 
 .price-group{
-	text-align: right;
-    float:right;
+	float:right;
+  text-align: right;
+    
 }
 
 .item-information-row{
 	width: 100%;
 }
 
-
 /* Shopping cart styling */
 #shopping-cart-total{
     background: #c5d3dd;
     margin-left: 20px;
-    padding-right: 20px;
     margin-top: 92px;
+    padding-right: 20px;
 }
 
 .total-section{
@@ -139,8 +134,8 @@ h2.page-title{
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 1.125em;
 	font-weight: 600;
-	text-transform: capitalize;
 	margin-right: 20px;
+  text-transform: capitalize;
 }
 
 .minor-number{
@@ -151,22 +146,20 @@ h2.page-title{
 	text-transform: capitalize;
 }
 
-
 .total-label-style {
-	text-align: left;
-    clear: both;
-    width: 100px;
-    display: inline-block;
-    padding-bottom: 20px;
+	clear: both;
+  display: inline-block;
+  padding-bottom: 20px;
+  text-align: left;
+  width: 100px;  
 }
 
-
 .total-label-value {
-	text-align: right;
-    clear: both;
-    float: right;
-    display: inline-block;
-    padding-bottom: 20px;
+	clear: both;
+  display: inline-block;
+  float: right;
+  padding-bottom: 20px;
+  text-align: right;
 }
 
 hr{

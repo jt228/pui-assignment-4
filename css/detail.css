@@ -3,7 +3,7 @@
 /* Selected Nav element */
 #home:hover {
 	border-bottom: 2px #5a6c7b solid;
-    padding-bottom: 13px;
+  padding-bottom: 13px;
 }
 
 /* Images and spacing for Product details*/
@@ -31,42 +31,42 @@
 
 /* Class for spacing order elements*/
 .order-group{
-	padding-bottom: 20px;
-	padding-bottom: 20px;
 	margin-top: 20px;
+	padding-bottom: 20px;
+	padding-bottom: 20px;
 	width:100%;
 }
 
 /* Class for selection width */
 .styled-select{
-	width: 164px;
 	float:right;
+	width: 164px;
 }
 
 /* Classes styling inputs */
 .styled-input, .custom-input{
 	border-color: #dfe0e0;
-	height: 40px;
-	width: 164px;
-	float: right;
-	display: block;
-	text-transform: capitalize;
-	font-family: "Josefin Sans";
 	border-radius: 1px;
-    font-weight: 300;
-    font-size: 1.125em;
-    padding-left: 20px;
+	display: block;
+	float: right;
+	font-family: 'Josefin Sans';
+	font-weight: 300;
+   font-size: 1.125em;
+	height: 40px;
+	text-transform: capitalize;
+  padding-left: 20px;
+	width: 164px;
 }
 
 .custom-input{
-	width: 100%;
 	font-size: 0.900em;
+	min-height: 100px;
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	min-height: 100px;
 	text-transform: none;
+	width: 100%;
 }
 
 /* Class to style Product Description group */
@@ -76,16 +76,16 @@
 
 /* Class to Style unordered list */
 .product-specifications-list{
-	margin: 0px;
 	list-style-type: circle; 
+	margin: 0px;
 	padding-left: 15px;
 
 }
 
 /* Class to Style unordered list items */
 .product-specifications-list li{
-	padding-left: 15px;
 	list-style-type: circle; 
+	padding-left: 15px;
 	-webkit-padding-start: 0px;
 }
 

@@ -1,84 +1,68 @@
 <!DOCUMENT html>
+<meta charset="utf-8">
 <html>
 	<head>
 		<title>Flip Stitch Pillows - Home</title>
-
 		<!--Stylesheets-->
-		<link rel="stylesheet" href="css/site.css" type="text/css">
-		<link rel="stylesheet" href="css/index.css" type="text/css">
-		
+		<link rel="stylesheet" href="css/site.css">
+		<link rel="stylesheet" href="css/index.css">
 		<!--Fonts-->
-		<link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Josefin+Sans:700,600,500,300,100" rel="stylesheet">
-
+		@import 'https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Josefin+Sans:700,600,500,300,100' 
 		<!--If using jQuery or Javascript-->	
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-		<script type="text/javascript" src="js/helpers.js"></script>
-		<script type="text/javascript" src="js/bag.js"></script>
-		<script type="text/javascript" src="js/products.js"></script>
-
+		<script src="js/helpers.js"></script>
+		<script src="js/bag.js"></script>
+		<script src="js/products.js"></script>
 	</head>
 
 	<body>
-
 	<!-- This is the navigational section-->
 
-		<div class="navbar">
+		<nav class="nav">
 			<div class="row nav-elements">
-
-
 				<!--Navbar - Logo-->
 				<a id="home" href="index.html" >
 					<img id="#logo" src="images/logo.png" >
 				</a>
-
 				<!-- Navbar- Go to Products Page-->
 				<a class="nav-item" href="products.html" id="products">Our Products</a>
-
 				<!-- Navbar- Go to Our Story Page-->
 				<a class="nav-item" href="story.html" id="story">Our Story</a>
-
 				<!-- Navbar- Go to pages associated with shopper-->
 				<span class="account">
 					<a href="bag.html">bag <span id="bag-item-total"></span></a>
 					<a href="account.html" id="account">your account</a>
 				</span>
 			</div>
-		</div>
+		</nav>
 
 
 	<!-- This is the main part of the page-->
 
 	<!-- There should be a giant image that contrasts comfort and coarse textures. -->
 		<main>
-
 			<div id="homepage-welcome-message"> 
-				
 				<!--Messaging-->
 				<h1>embrace modernity</h1>
-
 				<!-- Button to navigate to Products page -->
 				<a href="products.html"><button>shop now</button></a>
-
 			</div>
-
 			<!-- Overlay image aligned to bottom of the background image -->
 			<img src="images/pillow-group.png" id="homepage-pillow-overlay">
-			
 		</main>
 	<!-- End of Main-->
 
 
 	<!-- This is the footer -->
-		<div class="footer">
+		<footer class="footer">
 
 			<!-- Footer grouped by topic: Shopping -->
 			<div class="col-2">
 				<h6>Shopping</h6>
 				<ul>
 					<li><a href="products.html">Our Products</a></li>
-					<li><a>Your Bag</a></li>
-					<li><a>Your Account</a></li>
+					<li><a hre="bag.html">Your Bag</a></li>
+					<li><a href="account.html">Your Account</a></li>
 				</ul>
 			</div>
 
@@ -92,7 +76,7 @@
 				</ul>
 			</div>
 
-		</div>
+		</footer>
 	<!--End of HTML for footer-->
 
 	</body>

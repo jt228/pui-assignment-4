@@ -3,13 +3,13 @@
 /* Selected Nav element */
 #products {
 	border-bottom: 2px #c5d3dd solid;
-    padding-bottom: 20px;
-    text-decoration: none;
+  padding-bottom: 20px;
+  text-decoration: none;
 }
 
 /* Hover style for index.html because the spacing is different for the logo */
 #home:hover {
 	border-bottom: 2px #5a6c7b solid;
-    padding-bottom: 13px;
+  padding-bottom: 13px;
 }
 

@@ -6,32 +6,31 @@
 /* Navigation */
 
 /* "navbar" defines the size, placement, color and behavior of the navigation bar */
-.navbar {
-	top: 0;
-	overflow: hidden;
-	width: 94%;
-	position: fixed;
+.nav {
 	background: white;
 	height: 40px;
-	padding-top: 30px;
+	overflow: hidden;
 	padding-bottom: 30px;
 	padding-left: 3%;
 	padding-right:3%;
-
+	padding-top: 30px;
+	position: fixed;
+	top: 0;
+	width: 94%;
 }
 
 /* The footer will also be global*/
 .footer{
+	background: #c5d3dd;
 	display: block;
-	padding-top: 0px;
+	height: 145px;
 	margin-top: 40px;
 	overflow: hidden;
-	z-index: 10;
-	width: 94%;
-	height: 145px;
 	padding-left: 3%;
 	padding-right:3%;
-	background: #c5d3dd;
+	padding-top: 0px;
+	width: 94%;
+	z-index: 10;	
 }
 
 /* The footer will match style of other headlines but will be modified for spacing*/
@@ -39,22 +38,22 @@
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 1.000em;
 	font-weight: 700;
-	text-transform: uppercase;
 	margin-bottom: 4px;
+	text-transform: uppercase;
 }
 
 /* An unordered list for navigation elments might be helpful later*/
 .footer ul,li{
 	list-style: none;
-	-webkit-padding-start: 0px;
 	margin: 0px;
+	-webkit-padding-start: 0px;
 }
 
 /* Defines the spacing in the footer*/
 .footer .col-2{
 	border: 0px none;
-	padding: 0px;
 	margin: 0px;
+	padding: 0px;
 }
 
 .footer a {
@@ -68,19 +67,16 @@
 
 }
 
-
 /* Style of links in navbar */
-.navbar a {
+.nav a {
 	color: black;
+	float: left;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 1.500em;
-	font-weight: 300;
-	text-transform: uppercase;
+	font-weight: 300;	
 	text-decoration: none;
-	float: left;
-
+	text-transform: uppercase;
 }
-
 
 /* Style of links in navbar - Control positioning of text in Navbar */
 .nav-item {
@@ -92,18 +88,16 @@
 /* Style of links in navbar  -  Style to indicate Hover on Navbar*/
 .nav-item:hover {
 	border-bottom: 2px #5a6c7b solid;
-    padding-bottom: 20px;
-    text-decoration: none;
+  padding-bottom: 20px;
+  text-decoration: none;
 }
-
 
 /* Style of links in navbar  -  Style to indicate Active on Navbar*/
 nav-item:active {
 	border-bottom: 2px #c5d3dd solid;
-    padding-bottom: 20px;
-    text-decoration: none;
+  padding-bottom: 20px;
+  text-decoration: none;
 }
-
 
 /* Style of links in navbar  -  Style to add spacing to Home element*/
 #home {
@@ -113,41 +107,40 @@ nav-item:active {
 /* Style of links in navbar  -  Account info - for Log In and Bags*/
 .account a {
 	color: black;
+	display: block;
+	float: right;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 1.500em;
 	font-weight: 300;
-	text-transform: lowercase;
-	text-decoration: none;
-	float: right;
-	display: block;
-	padding-top: 24px;
 	padding-left: 30px;
 	padding-right: 30px;
+	padding-top: 24px;
+	text-transform: lowercase;
+	text-decoration: none;	
 }
 
 .account a:hover {
 	border-bottom: 2px #5a6c7b solid;
-    padding-bottom: 20px;
-    text-decoration: none;
+  padding-bottom: 20px;
+  text-decoration: none;
 }
 
-
 /* Breadcrumb navigation elelments */
-
 .breadcrumb{
+	align-items: center;
+	background: #c5d3dd;
+	display: flex;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 1.000em;
 	font-weight: 700;
-	text-transform: uppercase;
-	width: 94%;
-	padding-left: 3%;
-	padding-right: 3%;
 	height: 50px;
 	margin-top: 100px;
-	background: #c5d3dd;
-	display: flex;
-  	align-items: center;
-  	position: fixed;
+	padding-left: 3%;
+	padding-right: 3%;
+	position: fixed;
+	text-transform: uppercase;
+	top: 0px;
+	width: 94%;  	
 }
 
 .breadcrumb a{
@@ -155,44 +148,38 @@ nav-item:active {
 }
 
 .page-indicator{
+	display: inline-block;
 	padding-left: 5px;
 	padding-right: 5px;
-	display: inline-block;
 }
-
-
 
 
 /* Containers & Grids */
 
 /* modify the "body" element to have 0 padding */
-
 body {
-	padding: 0;
 	margin: 0;
+	padding: 0;
 }
 
 /* "main" is the container for all page elements besides the header and footer. */
 main {
-	width: 80%;
 	margin-right: 10%;
 	margin-left: 10%;
 	padding-bottom: 600px;
 	padding-top: 140px;
+	width: 80%;
 }
 
-
 /* Grid */
-
 .row {
-	
 	width: 100%;
 }
 
 [class*="col-"] {
     float: left;
-    padding: 0px;
     margin: 0px;
+    padding: 0px;
 }
 
 .col-1 {
@@ -244,70 +231,61 @@ main {
 	}
 
 /* Buttons */
-
 button {
+	background: #5a6c7b;
+	border:none;
+	color: #fff;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 1.500em;
 	font-weight: 100;
-	text-transform: uppercase;
-	color:white;
-	background: #5a6c7b;
 	height: 60px;
-	width: 100%;
-	position: middle;
-	border:none;
-	padding-top: 10px;
 	margin-bottom: 20px;
 	margin-top: 20px;
 	max-width: 350px;
+	padding-top: 10px;
+	position: middle;
+	text-transform: uppercase;
+	width: 100%;
 }
 
 button:hover{
-	box-shadow: 4px 4px 1px #b3b4b4;
 	border: 1px solid #b3b4b4;
-
+	box-shadow: 4px 4px 1px #b3b4b4;
 }
 
-
 button.secondary-button{
-	background: #ffffff;
+	background: #fff;
 	border: #5a6c7b 1px solid;
 	color: #5a6c7b;
 	margin-top: 0px;
 }
 
-
 button.tertiary-button{
-	height: 30px;
-	width: 150px;
+	background: #fff;
+	border: 1px #dfe0e0 solid;
+	color: #000;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 1.125em;
-	text-transform: lowercase;
 	font-weight: 150;
-	background: white;
-	color:black;
-	padding: 4px;
+	height: 30px;
 	margin-right: 5px;
 	margin-bottom: 0px;
 	margin-top: 17px;
-	border: 1px #dfe0e0 solid;
+	padding: 4px;
+	text-transform: lowercase;
+	width: 150px;
 }
-
 
 button.tertiary-button:hover{
-	box-shadow: 1px 1px 1px #b3b4b4;
 	border: 1px solid #b3b4b4;
-
+	box-shadow: 1px 1px 1px #b3b4b4;	
 }
 
-
 /* Typography s*/
-
-
 h1 {
+	color: #5a6c7b;
 	font-family: 'Averia Serif Libre', cursive;
 	font-size: 4.375em;
-	color: #5a6c7b;
 }
 
 h2 {
@@ -318,8 +296,8 @@ h2 {
 
 h2.page-title{
 	border-bottom: 2px #c5d3dd solid;
-    padding-bottom: 10px;
-    text-transform: lowercase;
+  padding-bottom: 10px;
+  text-transform: lowercase;
 }
 
 h3 {
@@ -331,13 +309,13 @@ h3 {
 h4 {	
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 1.250em;
-	text-transform: uppercase;
 	font-weight: 600;
+	text-transform: uppercase;
 	}
 
 h5 {
 	font-family: 'Josefin Sans', sans-serif;
-	font-size: 0.900em;
+	font-size: .900em;
 	font-weight: 700;
 }
 
@@ -351,7 +329,7 @@ p{
 
 .p1{
 	font-family: 'Josefin Sans', sans-serif;
-	font-size: 0.900em;
+	font-size: .900em;
 	font-weight: 500;
 }
 
@@ -367,17 +345,14 @@ a:hover {
 .p-link{
 	font-family: 'Josefin Sans', sans-serif;
 	font-size:  1.125em;	
+	margin-bottom: 20px;
 	font-weight: 700;
 	text-decoration: none;
-	margin-bottom: 20px;
 }
-
-
 
 /* Form fields */
 
 /* Form group */
-
 .form-group {
 	padding-bottom: 40px;
 	width: 100%;
@@ -385,8 +360,8 @@ a:hover {
 
 /* Filters */
 .filter-spacing{
-	margin-top: 10px;
 	margin-bottom: 18px;
+	margin-top: 10px;
 }
 
 .filter-item{
@@ -401,16 +376,16 @@ label.filter-label-name{
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 1.125em;
 	font-weight: 600;
-	text-transform: capitalize;
 	margin-right: 20px;
+	text-transform: capitalize;
 }
 
 input.custom-checkbox{	
-	-webkit-appearance: none;
 	border: 1px solid black;
-	padding: 9px;
 	border-radius: 1px;
 	display: inline-block;
+	padding: 9px;
+	-webkit-appearance: none;
 }
 
 input.custom-checkbox:checked{
@@ -418,14 +393,14 @@ input.custom-checkbox:checked{
 }
 
 label.filter-label{
+	display: inline-block;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 1.125em;
 	font-weight: 500;
 	margin-bottom: 14px;
 	margin-left: 10px;
-	display: inline-block;
-	vertical-align: middle;
 	text-transform: capitalize;
+	vertical-align: middle;	
 }
 
 .filter-spacing a{
@@ -436,21 +411,20 @@ label.filter-label{
 .bottom-filter {
 	padding-top: 10px;
 }
+
 /* Dropdown */
-
-
 .styled-select{
-	background: url("../images/down-arrow.svg") no-repeat 96% 5px;
-	height: 40px;
-	overflow: hidden;
-	width: 240px;
+	background: url(../images/down-arrow.svg) no-repeat 96% 5px;
 	border-color: #dfe0e0;
-	-webkit-appearance: none;
-  	-webkit-border-radius: 0px;
-  	font-family: "Josefin Sans";
+	font-family: 'Josefin Sans';
 	font-size: 1.125em;
 	font-weight: 300;
+	height: 40px;
+	overflow: hidden;
 	padding-left: 20px;
+	width: 240px;
+	-webkit-appearance: none;
+  -webkit-border-radius: 0px;
 }
 
 option.selectable-option{
@@ -458,51 +432,45 @@ option.selectable-option{
 	text-transform: capitalize;
 }
 
-
 /*Search Box */
-
 input.text-input{
 	border-color: #dfe0e0;
-	height: 40px;
-	width: 240px;
-	float: right;
-	display: block;
-	font-family: "Josefin Sans";
 	border-radius: 1px;
-  font-weight: 300;
-  font-style: italic;
-  font-size: 1.125em;
-  padding-left: 20px;
+	display: block;
+	float: right;
+	font-family: 'Josefin Sans';
+	font-size: 1.125em;
+	font-style: italic;
+	font-weight: 300;
+	height: 40px;
+	padding-left: 20px;
+	width: 240px;
 }
-
 
 /* Shopping Tiles */
-
 section .shopping-section{
-	width: 100%;
 	padding: 40px;
+	width: 100%;
 }
 
-
 .product-tile{
-	width: 27%; /* 256px */
-	height: 305px;
-	padding: 20px;
-	margin-bottom: 40px;
 	background: white;
 	display:  inline-flex;
+	height: 305px;
+	margin-bottom: 40px;
+	padding: 20px;
+	width: 27%; 
 }
 
 .product-tile:hover{
-	box-shadow: 4px 4px 1px #b3b4b4;
 	border: 1px solid #b3b4b4;
+	box-shadow: 4px 4px 1px #b3b4b4;
 }
 
 .product-tile img{
+	display: inline-block;
+  height: auto;
 	width: 100%;
-    height: auto;
-    display: inline-block;
-    clip: rect(0px,256px,256px,0px);
 }
 
 .product-tile-content {
@@ -510,18 +478,18 @@ section .shopping-section{
 }
 
 p.product-tile-label{
+	color: #000;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 1.125em;
 	font-weight: 700;
-	color: black;
 	text-decoration: none;
 }
 
 .product-tile-price{
+	color: black;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 1.125em;
 	font-weight: 500;
-	color: black;
 	text-decoration: none;
 }
 
@@ -529,42 +497,38 @@ p.product-tile-label{
 	text-decoration: none;
 }
 
-
 #product-tile-template{
 	visibility: hidden;
 }
 
 /* Sections for details on the right hand size of page */
-
 .left-panel {
 	padding-bottom: 40px;
 }
 
-
 /*Shoppoing Modal stuff
 /* The Modal (background) */
 .modal {
-  visibility: hidden;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
   background-color: rgba(256,256,256, 0.6);
+  height: 100%;
+  left: 0;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  visibility: hidden;
+  width: 100%;
+  z-index: 1;
 }
 
 /* Modal Content */
 .modal-content {
-  position: relative;
-  text-align: center;
   background-color: #fefefe;
-  margin: auto;
-  top:300px;
-  width: 600px;
-  padding:30px;
   margin:auto;
   max-width: 1200px;
+  padding:30px;
+  position: relative;
+  text-align: center;
+  top:200px;
+  width: 600px; 
 }
 

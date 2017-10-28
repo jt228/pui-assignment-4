@@ -64,7 +64,6 @@ function addItemToBag(){
   showModal("false");
 }
 
-
  // jQuery methods go here...
 $(document).ready(function(){
   //Update the shopping bag based on what the customer has selected.

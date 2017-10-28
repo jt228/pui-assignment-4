@@ -2,33 +2,33 @@
 /* Make home sleected */
 #home {
 	border-bottom: 2px #c5d3dd solid;
-    padding-bottom: 13px;
+  padding-bottom: 13px;
 }
 
 /* Main should adjust to fill the homepage */
 main {
-	background-image: url("../images/homepage-background.png");
-	width: 100%;
+	background-image: url(../images/homepage-background.png);
+  background-repeat: no-repeat;
 	margin-right: 0%;
 	margin-left: 0%;
-    background-repeat: no-repeat;
-    padding-bottom: 0px;
+  padding-bottom: 0px;
+  width: 100%;
 }
 
 /* Overlay background image with image of products */
 #homepage-pillow-overlay{
-	width: 80vw;
+	bottom: 0px;
 	height: auto;
 	padding-right: 10vw;
-    padding-left: 10vw;
-    bottom: 0px;
+  padding-left: 10vw;
+  width: 80vw;
 }
 
 /* Center welcome message and button */
 #homepage-welcome-message{
 	display: inline-block;
 	margin-left: 25%;
-	margin-right: 25%;
-    width: 50%;
-    text-align: center;
+	margin-right: 25%;  
+  text-align: center;
+  width: 50%;
 }

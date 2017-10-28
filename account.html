@@ -1,158 +1,108 @@
 <!DOCUMENT html>
+<meta charset="utf-8">
 <html>
 	<head>
 		<title>Flip Stitch Pillows - Your Account</title>
 
-
 		<!--Stylesheets-->
-		<link rel="stylesheet" href="css/site.css" type="text/css">
-		<link rel="stylesheet" href="css/detail.css" type="text/css">
-		<link rel="stylesheet" href="css/bag.css" type="text/css">
-		<link rel="stylesheet" href="css/account.css" type="text/css">
+		<link rel="stylesheet" href="css/site.css">
+		<link rel="stylesheet" href="css/detail.css">
+		<link rel="stylesheet" href="css/bag.css">
+		<link rel="stylesheet" href="css/account.css">
 
 		<!--Fonts-->
 		<link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Josefin+Sans:700,600,500,300,100" rel="stylesheet">
 
 		<!--If using jQuery or Javascript-->	
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script type="text/javascript" src="js/helpers.js"></script>
-		<script type="text/javascript" src="js/bag.js"></script>
-		<script type="text/javascript" src="js/products.js"></script>
-		<script type="text/javascript" src="js/account.js"></script>
+		<script src="js/helpers.js"></script>
+		<script src="js/bag.js"></script>
+		<script src="js/products.js"></script>
+		<script src="js/account.js"></script>
 		
-
 	</head>
 
 	<body>
-
 	<!-- This is the navigational section-->
-		<div class="navbar">
+		<nav class="nav">
 			<div class="row nav-elements">
-
 				<!--Navbar - Logo-->
 				<a id="home" href="index.html" >
 					<img id="logo" src="images/logo.png" >
 				</a>
-
 				<!-- Navbar- Go to Products Page-->
 				<a class="nav-item" href="products.html" id="products">Our Products</a>
-				
 				<!-- Navbar- Go to Our Story Page-->
-				<a class="nav-item" href="story.html" id="story">Our Story</a>
-
-				
+				<a class="nav-item" href="story.html" id="story">Our Story</a>				
 				<!-- Navbar- Go to pages associated with shopper-->
 				<span class="account">
 					<a href="bag.html" id="bag">bag <span id="bag-item-total"></span></a>
 					<a href="account.html" id="account">your account</a>
 				</span>
 			</div>
-		</div>
-
+		</nav>
 
 	<!-- This is the main part of the page-->
 		<main>
-
-
 			<!-- Page Header-->
-
 			<div class="col-12">
 				<h2 class="page-title">your account</h2>
 			</div>
-
-
 			<!-- Product Details Section - Order Widgets-->
 			<div class="col-3" >
-
 				<!-- Product Details Section - Enter Quantity-->
 				<div id="total-span">
 					<label class="total-label-style minor-number" id="shipping-label">Your Info</label>
 				</div>
-
 				<div id="total-span">
 					<label class="total-label-style">Wishlist</label>
 				</div>
-		
-
 			</div>
-			
-			
-
 			<!-- Product Detail Section-->
-
 					<!-- Count of items -->
-				<div class="col-9">	
-
-					<div id="total-item-div">
-
-						<label class="total-label-style" id="wishlist-total-items-label">Wishlist Items <span id="wishlist-item-total">(0)</span></label>
-
-					</div>
-
-
-					<!-- Product Details Section - Additional Details-->
-					<div class="order-item-row" id="wishlist-contents">
-
-						<!-- Product Details Section - Customizaton-->		
-						<div class="order-group" id="template-item-div">
-
-							<!-- Product Details Section - Select Customization-->
-							<div class="col-2 shopping-cart-img-container">
-								<a href="detail.html">
-									<img class="shopping-cart-img" src="images/preview-couch-bear.png" id="bag-preview-image">
-								</a>
-							</div>
-
-							<div class="col-10">
-							
-								<label class="col-6 order-row-font-style item-name" id="item-name-label">Item Name</label>
-
-								<div class="col-6 price-group">
-									
-									<label class="order-row-font-style">$<span id="span-item-price">335</span></label>
-									
-									<label class="order-row-font-style multiplier">x</label>
-									
-									<input class="styled-select" type="text" value="1" id="quantity-id"></input>
-									
-									<label class="order-row-font-style"><span id="span-item-price-total">$335</span></label>
-								
-								</div>
-						
-								<div class="col-12 item-span-styling">
-									<a class="p1" onclick="toggleVisibility()" id="custom-request-link">Custom Request</a>
-								
-									<div class="order-group" id="custom-request-section">
-										<p class="p1">How do you want to customize your pillow?</p>
-										<textarea class="custom-input" type="text" name="customize" class="text-input" placeholder="Enter request here." id="custom-request-text"></textarea>
-									</div>
-								</div>
-
-								<div class="col-12 item-span-styling">
-									
-									<button class="tertiary-button" onclick="sendToShoppingBag()">add to bag</button>
-									
-									<button class="tertiary-button" onclick="removeItemFromWishList()" id="remove-button">remove</button>
-
-								</div>
-
-							</div>
-
+			<div class="col-9">	
+				<div id="total-item-div">
+					<label class="total-label-style" id="wishlist-total-items-label">Wishlist Items <span id="wishlist-item-total">(0)</span></label>
+				</div>
+				<!-- Product Details Section - Additional Details-->
+				<div class="order-item-row" id="wishlist-contents">
+					<!-- Product Details Section - Customizaton-->		
+					<div class="order-group" id="template-item-div">
+						<!-- Product Details Section - Select Customization-->
+						<div class="col-2 shopping-cart-img-container">
+							<a href="detail.html">
+								<img class="shopping-cart-img" src="images/preview-couch-bear.png" id="bag-preview-image">
+							</a>
 						</div>
-						<!--End of first item-->
-
-					<!--END OF BAG-->
+						<div class="col-10">							
+							<label class="col-6 order-row-font-style item-name" id="item-name-label">Item Name</label>
+							<div class="col-6 price-group">
+								<label class="order-row-font-style">$<span id="span-item-price">335</span></label>
+								<label class="order-row-font-style multiplier">x</label>
+								<input class="styled-select" type="text" value="1" id="quantity-id"></input>
+								<label class="order-row-font-style"><span id="span-item-price-total">$335</span></label>		
+							</div>		
+							<div class="col-12 item-span-styling">
+								<a class="p1" onclick="toggleVisibility()" id="custom-request-link">Custom Request</a>
+								<div class="order-group" id="custom-request-section">
+									<p class="p1">How do you want to customize your pillow?</p>
+									<textarea class="custom-input" type="text" name="customize" class="text-input" placeholder="Enter request here." id="custom-request-text"></textarea>
+								</div>
+							</div>
+							<div class="col-12 item-span-styling">									
+								<button class="tertiary-button" onclick="sendToShoppingBag()">add to bag</button>									
+								<button class="tertiary-button" onclick="removeItemFromWishList()" id="remove-button">remove</button>
+							</div>
+						</div>
 					</div>
+						<!--End of Template-->
 
+					<!--END OF Wishlist-->
+				</div>
 			</div>
 						
+			<!-- Shopping Bag - Subtotal & Total-->
 
-				<!-- Shopping Bag - Subtotal & Total-->
-				<div class="col-4" id="shopping-cart-total">
-
-
-
-							
 		</main>
 		<div class="row" style="height:200px; width:100%">
 			</div>
@@ -160,17 +110,16 @@
 	<!--END OF MAIN -->
 
 
-		
 	<!-- This is the footer -->
-		<div class="footer">
+		<footer class="footer">
 
 			<!-- Footer grouped by topic: Shopping-->
 			<div class="col-2">
 				<h6>Shopping</h6>
 				<ul>
 					<li><a href="products.html">Our Products</a></li>
-					<li><a>Your Bag</a></li>
-					<li><a>Your Account</a></li>
+					<li><a hre="bag.html">Your Bag</a></li>
+					<li><a href="account.html">Your Account</a></li>
 				</ul>
 			</div>
 
@@ -185,7 +134,7 @@
 				</ul>
 			</div>
 
-		</div>
+		</footer>
 	<!--End of HTML for footer-->
 
 	</body>

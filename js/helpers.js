@@ -123,12 +123,14 @@ var setUpdatedTotals = function(){
     //
     shoppingBagSubtotal =oldSubtotal + price*quantity;
   }
+  //Calculate the value of the tax on this amount and round it to the nearest cent
+  shoppingBagTax = Math.round(shoppingBagSubtotal*.087);
+  //Add the subtotal and tax to calculate to the total
+  shoppingBagTotal = Math.round(shoppingBagSubtotal+parseFloat(shoppingBagTax)).toFixed(2);
   //Convert the shopping bag total to decimals
   shoppingBagSubtotal = Math.round(shoppingBagSubtotal).toFixed(2);
   //Calculate the value of the tax on this amount and round it to the nearest cent
   shoppingBagTax = Math.round(shoppingBagSubtotal*.087).toFixed(2);
-  //Add the subtotal and tax to calculate to the total
-  shoppingBagTotal = Math.round(shoppingBagSubtotal+parseFloat(shoppingBagTax)).toFixed(2);
   //Set the subtotal, tax, and total in the shopping bag
   $("#subtotal-value").text("$ "+shoppingBagSubtotal);
   $("#tax-value").text(shoppingBagTax);
